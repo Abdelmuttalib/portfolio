@@ -1,0 +1,60 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Your own custom component styles */
+
+@import "tailwindcss/utilities";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  html {
+    @apply font-WorkSans;
+  }
+}
+
+.H1 {
+  @apply text-4xl leading-[140%] tracking-normal font-medium lg:text-4.5xl xl:text-5xl lg:font-black 2xl:font-black text-primary-900 dark:text-primary-50;
+}
+
+.H2 {
+  @apply text-3xxl lg:text-4xl 2xl:text-4xl leading-[140%] tracking-[0%];
+}
+
+.Headline {
+  @apply text-xl lg:text-2xl leading-[145%] tracking-[0%];
+}
+
+.Body {
+  @apply text-mini-lg lg:text-2xl leading-[120%] tracking-[0%];
+}
+
+.BodyMedium {
+  @apply text-lg lg:text-2xl leading-[120%] tracking-[0%];
+}
+
+.P {
+  @apply text-lg lg:text-xl 2xl:text-2xl leading-[160%] tracking-[0%];
+}
+
+.Small {
+  @apply text-sm sm:text-md lg:text-lg leading-[100%];
+}
+
+.Caption {
+  @apply text-sm leading-[100%] tracking-[0%];
+}
+
+.Button {
+  @apply Headline ease-in-out duration-500 focus:ring-2 focus:ring-offset-2 dark:focus:ring-2 focus:ring-primary  bg-primary text-white rounded-lg hover:bg-opacity-95 w-fit shadow-2xl hover:ml-1 shadow-primary dark:shadow-none dark:text-primary-700 dark:font-semibold dark:bg-primary-lightLink dark:hover:bg-opacity-80 dark:focus:ring-primary-lightLink dark:focus:ring-offset-primary-700;
+}
+
+.Input {
+  @apply bg-primary-50 dark:bg-primary dark:text-primary-200 text-primary-400 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-primary-500 dark:focus:ring-offset-primary rounded-lg lg:w-[90%];
+}
+
+.ButtonLink {
+  @apply transform ease-in-out duration-500 hover:translate-x-1 focus:ring-2 focus:ring-offset-2 dark:focus:ring-2 focus:ring-primary  bg-primary text-white rounded-lg hover:bg-opacity-95 w-fit shadow-2xl shadow-primary dark:bg-primary dark:shadow-primary-900 dark:focus:ring-primary dark:focus:ring-offset-primary-400;
+}
