@@ -16,43 +16,42 @@ export default function Home() {
   };
 
   const variants = {
-    visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.3, duration: 1 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
     <Layout>
-      <header className="min-h-80 h-fit pt-24 flex flex-col gap-4 sm:gap-5">
-        <motion.h1
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-          transition={{ ease: "easeOut", duration: 0.5 }}
-          className="H1 lg:w-3/4"
-        >
+      <motion.header
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        className="min-h-80 h-fit pt-24 flex flex-col gap-4 sm:gap-5"
+      >
+        <motion.h1 variants={item} className="H1 lg:w-3/4">
           Building beautiful web experiences
         </motion.h1>
-        <motion.p
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-          transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
-          className="Body text-primary-400 lg:w-2/4"
-        >
+        <motion.p variants={item} className="Body text-primary-400 lg:w-2/4">
           Self-Taught Front End Developer, I build web applications
         </motion.p>
         <motion.button
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-          transition={{ ease: "easeOut", duration: 0, delay: 1 }}
+          variants={item}
           onClick={handleScroll}
           type="button"
           className="Button px-7 py-3 lg:px-12 lg:py-4 mt-4"
         >
           About Me
         </motion.button>
-      </header>
+      </motion.header>
       {/* Personal About Me content */}
       <Personal rel={aboutMeRef} />
       {/* Projects section */}

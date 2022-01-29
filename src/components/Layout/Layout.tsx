@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import GitHubIcon from "../../../public/svgs/GithubIcon.svg";
 import LinkedinIcon from "../../../public/svgs/LinkedinIcon.svg";
+import { motion } from "framer-motion";
 
 interface ChildProps {
   children: React.ReactNode;
@@ -11,7 +12,14 @@ const Layout = ({ children }: ChildProps) => {
   return (
     <div className="dark:bg-primary-700">
       <nav className="h-14 items-center dark:text-primary-50 pt-5">
-        <header className="Headline">Abdelmuttalib Ahmed</header>
+        <motion.header
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="Headline"
+        >
+          Abdelmuttalib Ahmed
+        </motion.header>
       </nav>
       {children}
       <footer className="flex justify-between dark:text-primary-200 text-primary Caption py-5 pr-8 mt-20 border-t dark:border-t-primary-500 dark:border-opacity-20 items-center">
