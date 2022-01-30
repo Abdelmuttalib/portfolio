@@ -1,5 +1,3 @@
-import React from "react"
-
 import Document, {
   Html,
   Head,
@@ -16,10 +14,24 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          {/* <meta charset="utf-8" /> */}
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="description"
+            content="Abdelmuttalib Ahmed is a self-taught Front End Developer. Dedicated to driving innovation with the ability to follow industry and technological trends, and facilitating early adoption of innovations."
+          />
+          {/* Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) */}
+          <meta name="keywords" content="[username], [name], skill" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
             rel="stylesheet"
           />
         </Head>
