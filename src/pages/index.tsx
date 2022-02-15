@@ -60,7 +60,7 @@ export default function Home() {
       <Projects />
       {/* Experience listing section */}
       <Experience />
-      {/* direct Contant form section */}
+      {/* direct Contact form section */}
       <ContactMe />
     </Layout>
   )
