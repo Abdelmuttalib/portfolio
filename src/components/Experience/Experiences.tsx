@@ -12,7 +12,7 @@ const Experiences = (props: Props) => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { staggerChildren: 2 },
+      transition: { staggerChildren: 1 },
     },
   }
 
