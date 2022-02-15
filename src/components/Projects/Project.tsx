@@ -91,14 +91,22 @@ const Project = ({ title, description, image, link }: Props) => {
           variants={item}
           className="relative items-start hidden w-[50%] max-w-2/4 lg:block"
         >
-          <Image
-            src={image}
-            alt="project image"
-            // width={700}
-            // height={500}
-            layout="fill"
-            objectFit="contain"
-          />
+          <Link href={link}>
+            <a
+              target="_blank"
+              rel="noopener"
+              className="transform ease-in-out duration-300 scale-100 hover:scale-110"
+            >
+              <Image
+                src={image}
+                alt="project image"
+                // width={700}
+                // height={500}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </motion.span>
         <motion.div variants={item} className="relative block  lg:hidden">
           <Link href={link}>
