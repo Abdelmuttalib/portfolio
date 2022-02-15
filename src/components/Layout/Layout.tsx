@@ -23,7 +23,6 @@ const Layout = ({ children }: ChildProps) => {
         >
           Abdelmuttalib Ahmed
         </motion.header>
-
         <ThemeToggle />
       </nav>
       {children}
