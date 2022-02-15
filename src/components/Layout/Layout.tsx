@@ -5,6 +5,7 @@ import Link from "next/link"
 
 import GitHubIcon from "../../../public/svgs/GithubIcon.svg"
 import LinkedinIcon from "../../../public/svgs/LinkedinIcon.svg"
+import ThemeToggle from "../ThemeToggle"
 
 interface ChildProps {
   children: React.ReactNode
@@ -13,7 +14,7 @@ interface ChildProps {
 const Layout = ({ children }: ChildProps) => {
   return (
     <div className="dark:bg-primary-700">
-      <nav className="items-center pt-5 h-14 dark:text-primary-50">
+      <nav className="flex items-center justify-between pt-5 h-14 dark:text-primary-50">
         <motion.header
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -22,6 +23,8 @@ const Layout = ({ children }: ChildProps) => {
         >
           Abdelmuttalib Ahmed
         </motion.header>
+
+        <ThemeToggle />
       </nav>
       {children}
       <footer className="flex items-center justify-between py-5 pr-8 mt-20 border-t dark:text-primary-200 text-primary Caption dark:border-t-primary-500 dark:border-opacity-20">
