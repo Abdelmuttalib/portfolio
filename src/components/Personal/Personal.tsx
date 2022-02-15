@@ -3,9 +3,9 @@ import React from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
+import Resume from "../../../public/assets/resume.pdf"
 import profile from "../../../public/profile.png"
 // import profile2 from "../../../public/profile2.jpg"
-import Resume from "../../assets/resume.pdf"
 
 const Personal = ({ rel }) => {
   // a function to open the resume pdf file in a new tab
