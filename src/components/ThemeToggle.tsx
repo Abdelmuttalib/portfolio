@@ -14,12 +14,12 @@ const ThemeToggle = () => {
   return (
     <div className="cursor-pointer ease-in-out duration-300">
       {theme === "light" ? (
-        <SunIcon
+        <MoonIcon
           className="w-5 h-5 md:w-6 md:h-6 text-primary"
           onClick={toggleTheme}
         />
       ) : (
-        <MoonIcon
+        <SunIcon
           className="w-5 h-5 md:w-6 md:h-6 text-primary-200"
           onClick={toggleTheme}
         />
