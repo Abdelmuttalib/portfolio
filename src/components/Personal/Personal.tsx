@@ -35,7 +35,7 @@ const Personal = ({ rel }) => {
       className="flex flex-col items-center justify-center w-full pt-8 mt-60 lg:mt-72 min-h-[550px] sm:pt-0 gap-7 text-primary box-border"
     >
       <motion.div variants={item} className="overflow-hidden rounded-full">
-        <Image src={profile} alt="personal picture" width={200} height={200} />
+        <Image src={profile} alt="personal picture" width={180} height={180} />
       </motion.div>
       <motion.h2 variants={item} className="mb-6 text-center H1">
         Personal
