@@ -3,7 +3,8 @@ import React from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-import pic from "../../../public/pic.png"
+import profile from "../../../public/profile.png"
+// import profile2 from "../../../public/profile2.jpg"
 import Resume from "../../assets/resume.pdf"
 
 const Personal = ({ rel }) => {
@@ -31,10 +32,10 @@ const Personal = ({ rel }) => {
       whileInView="visible"
       viewport={{ once: true }}
       ref={rel}
-      className="flex flex-col items-center justify-center w-full pt-8 mt-56 min-h-[550px] sm:pt-0 gap-7 text-primary box-border"
+      className="flex flex-col items-center justify-center w-full pt-8 mt-60 lg:mt-72 min-h-[550px] sm:pt-0 gap-7 text-primary box-border"
     >
-      <motion.div variants={item}>
-        <Image src={pic} alt="personal picture" width={144} height={144} />
+      <motion.div variants={item} className="overflow-hidden rounded-full">
+        <Image src={profile} alt="personal picture" width={200} height={200} />
       </motion.div>
       <motion.h2 variants={item} className="mb-6 text-center H1">
         Personal
