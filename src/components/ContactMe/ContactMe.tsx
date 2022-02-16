@@ -33,14 +33,12 @@ const ContactMe = () => {
           if (response.text !== "OK") {
             setError(true)
           } else {
-            console.log(response.text)
             //React Hook Form function to reset the form states and values
             reset()
           }
         },
         function (error) {
           setError(true)
-          console.log(error.text)
         }
       )
   }
@@ -155,7 +153,6 @@ const ContactMe = () => {
             </span>
           )}
           <button
-            onClick={() => console.log("Clicked")}
             type="submit"
             className="px-12 py-3 mt-10 Button lg:px-14 lg:py-4"
           >

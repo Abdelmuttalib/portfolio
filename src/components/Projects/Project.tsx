@@ -10,7 +10,6 @@ export interface Props {
 }
 
 const Project = ({ title, description, image, link }: Props) => {
-  console.log("single project")
   const variants = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -28,6 +27,9 @@ const Project = ({ title, description, image, link }: Props) => {
     <motion.div variants={item} className="flex flex-col gap-6">
       <motion.div
         variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
         className="flex flex-col w-full gap-1 lg:flex-row lg:justify-between"
       >
         {/* Desktop View */}
@@ -89,7 +91,7 @@ const Project = ({ title, description, image, link }: Props) => {
         {/* </div> */}
         <motion.span
           variants={item}
-          className="relative items-start hidden w-[50%] max-w-2/4 lg:block"
+          className="relative items-start hidden w-[50%] lg:block"
         >
           <Link href={link}>
             <a

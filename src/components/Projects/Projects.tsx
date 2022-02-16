@@ -32,7 +32,7 @@ const Projects = () => {
         Projects
       </motion.h2>
       {/* Project section */}
-      <div className="space-y-28">
+      <div className="space-y-44">
         {projects.map((project, index) => (
           <Project
             key={project.title + index}

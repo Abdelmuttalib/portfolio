@@ -16,7 +16,7 @@ export const projects = [
   {
     title: "Spotify Clone",
     description: "In Progress...",
-    image: "/react-blog.png",
+    image: "https://links.papareact.com/9xl",
     link: "https://github.com/Abdelmuttalib/spotify-clone",
   },
   {

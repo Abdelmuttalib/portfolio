@@ -23,7 +23,13 @@ const Layout = ({ children }: ChildProps) => {
         >
           Abdelmuttalib Ahmed
         </motion.header>
-        <ThemeToggle />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          <ThemeToggle />
+        </motion.div>
       </nav>
       {children}
       <footer className="flex items-center justify-between py-5 pr-8 mt-20 border-t dark:text-primary-200 text-primary Caption dark:border-t-primary-500 dark:border-opacity-20">

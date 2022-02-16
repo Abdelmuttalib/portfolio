@@ -5,6 +5,9 @@ module.exports = {
     EMAIL_TEMPLATE_ID: process.env.EMAIL_TEMPLATE_ID,
     EMAIL_USER_ID: process.env.EMAIL_USER_ID,
   },
+  images: {
+    domains: ["links.papareact.com"],
+  },
   // output: { path: path.resolve(__dirname, "static") },
   webpack: (config) => {
     config.module.rules.push({
