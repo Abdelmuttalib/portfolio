@@ -45,14 +45,16 @@ export default function Home() {
         <motion.p variants={item} className="Body text-primary-400 lg:w-2/4">
           Self-Taught Front End Developer, I build web applications
         </motion.p>
+        {/* <div className="ease-in-out duration-500 hover:ml-1"> */}
         <motion.button
           variants={item}
           onClick={handleScroll}
           type="button"
-          className="py-3 mt-5 Button px-7 lg:px-12 lg:py-4 ease-in-out duration-300s"
+          className="py-3 mt-5 Button px-7 lg:px-12 lg:py-4"
         >
           About Me
         </motion.button>
+        {/* </div> */}
       </motion.header>
       {/* Personal About Me content */}
       <Personal rel={aboutMeRef} />

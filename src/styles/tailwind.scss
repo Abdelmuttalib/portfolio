@@ -48,7 +48,7 @@ html {
 }
 
 .Button {
-  @apply Headline ease-in-out duration-500 focus:ring-2 focus:ring-offset-2 dark:focus:ring-2 focus:ring-primary  bg-primary text-white rounded-lg hover:bg-opacity-95 w-fit shadow-2xl hover:ml-1 shadow-primary dark:shadow-none dark:text-primary-700 dark:font-medium dark:tracking-wide dark:bg-primary-lightLink dark:hover:bg-opacity-80 dark:focus:ring-primary-lightLink dark:focus:ring-offset-primary-700;
+  @apply Headline focus:ring-2 focus:ring-offset-2 dark:focus:ring-2 focus:ring-primary bg-primary text-white rounded-lg hover:bg-opacity-95 w-fit shadow-2xl hover:ml-1 ease-out hover:ease-in-out duration-700 shadow-primary dark:shadow-none dark:text-primary-700 dark:font-medium dark:tracking-wide dark:bg-primary-lightLink dark:hover:bg-opacity-80 dark:focus:ring-primary-lightLink dark:focus:ring-offset-primary-700;
 }
 
 .Input {
