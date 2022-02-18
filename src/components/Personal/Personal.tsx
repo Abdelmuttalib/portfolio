@@ -44,10 +44,12 @@ const Personal = ({ rel }) => {
         variants={item}
         className="text-center P w-[95%] md:w-[80%] lg:w-[75%] xl:w-[70%] dark:text-primary-300"
       >
-        Passionate and inspired self-taught Front-end and React developer.
-        Dedicated to driving innovation with the ability to follow industry and
-        technological trends, and facilitating early adoption of innovations.
-        Building well-designed and interactive Websites is my ultimate goal.
+        Passionate and inspired self-taught web developer with a strong eye for
+        innovative design and a keen understanding of techniques geared toward
+        optimum user experience. Dedicated to driving innovation with the
+        ability to follow industry and technological trends, and facilitating
+        early adoption of innovations. Building well-designed and interactive
+        Websites is my ultimate goal.
       </motion.p>
       <motion.button
         variants={item}

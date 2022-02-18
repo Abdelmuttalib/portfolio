@@ -49,7 +49,7 @@ export default function Home() {
           variants={item}
           onClick={handleScroll}
           type="button"
-          className="py-3 mt-4 Button px-7 lg:px-12 lg:py-4"
+          className="py-3 mt-5 Button px-7 lg:px-12 lg:py-4 ease-in-out duration-300s"
         >
           About Me
         </motion.button>
