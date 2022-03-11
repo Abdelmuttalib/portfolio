@@ -13,7 +13,7 @@ interface ChildProps {
 
 const Layout = ({ children }: ChildProps) => {
   return (
-    <div className="dark:bg-primary-700">
+    <div>
       <nav className="flex items-center justify-between pt-5 h-14 dark:text-primary-50">
         <motion.header
           initial={{ opacity: 0 }}
