@@ -14,6 +14,13 @@ export const projects = [
     link: "https://github.com/Abdelmuttalib/react-blogs-app",
   },
   {
+    title: "Full Stack Goals App",
+    description:
+      "A Full Stack MERN Goals Web App with full REST API and JWT authentication. Built with React, Redux toolkit, Nodejs, Express and MongoDB. Status: In progress (final stages and preparation for deployment)",
+    image: "/goals-mern-app.png",
+    link: "https://github.com/Abdelmuttalib/goals-mern-app",
+  },
+  {
     title: "Spotify Clone",
     description: "In Progress...",
     image: "https://links.papareact.com/9xl",
