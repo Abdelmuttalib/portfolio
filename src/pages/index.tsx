@@ -37,7 +37,7 @@ export default function Home() {
         variants={variants}
         initial="hidden"
         animate="visible"
-        className="flex flex-col pt-24 min-h-80 h-fit gap-4 sm:gap-5"
+        className="flex flex-col h-screen pt-24 lg:pt-36 min-h-80 gap-4 sm:gap-5"
       >
         <motion.h1 variants={item} className="H1 lg:w-3/4">
           Building beautiful web experiences
