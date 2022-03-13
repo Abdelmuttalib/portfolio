@@ -44,7 +44,7 @@ export default function Home() {
         </motion.h1>
         <motion.p
           variants={item}
-          className="Body text-primary-400 dark:text-primary-200 lg:w-2/4"
+          className="Body text-primary-400 dark:text-primary-200/90 lg:w-2/4"
         >
           Self-Taught Front End Developer, I build web applications
         </motion.p>
