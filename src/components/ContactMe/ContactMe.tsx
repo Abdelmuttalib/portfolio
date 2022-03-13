@@ -167,7 +167,7 @@ const ContactMe = () => {
 
         {/* Direct Email, small screen */}
         <div className="h-auto mt-16 font-semibold text-primary-400 lg:hidden">
-          <h5 className="mb-10 text-2xl">Or..</h5>
+          <p className="mb-10 text-2xl">Or..</p>
           <span className="transform translate translate-x-0 hover:bg-primary-link ease-in-out duration-200 hover:ml-1 hover:translate-x-5 ">
             <a
               rel="noreferrer"
@@ -183,7 +183,7 @@ const ContactMe = () => {
         <div className="flex flex-col mt-24 font-semibold text-primary-400 lg:mt-0 gap-4 lg:flex-grow">
           {/* Direct Email, large screen */}
           <div className="hidden mt-16 min-h-10 text-primary-400 lg:flex gap-6 mb-14">
-            <h5 className="mt-2 mb-10 text-2xl">Or..</h5>
+            <p className="mt-2 mb-10 text-2xl">Or..</p>
 
             <a
               rel="noreferrer"

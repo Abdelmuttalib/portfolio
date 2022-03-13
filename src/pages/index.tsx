@@ -42,7 +42,10 @@ export default function Home() {
         <motion.h1 variants={item} className="H1 lg:w-3/4">
           Building beautiful web experiences
         </motion.h1>
-        <motion.p variants={item} className="Body text-primary-400 lg:w-2/4">
+        <motion.p
+          variants={item}
+          className="Body text-primary-400 dark:text-primary-200 lg:w-2/4"
+        >
           Self-Taught Front End Developer, I build web applications
         </motion.p>
         {/* <div className="ease-in-out duration-500 hover:ml-1"> */}
