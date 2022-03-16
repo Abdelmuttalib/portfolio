@@ -7,9 +7,10 @@ export interface Props {
   description: string
   image: string
   link: string
+  liveDemo?: string
 }
 
-const Project = ({ title, description, image, link }: Props) => {
+const Project = ({ title, description, image, link, liveDemo }: Props) => {
   const variants = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -48,7 +49,7 @@ const Project = ({ title, description, image, link }: Props) => {
           >
             {description ? description : "Description of project"}
           </motion.p>
-          <motion.p variants={item} className="pt-14">
+          <motion.p variants={item} className="flex pt-14 gap-6">
             <Link href={link}>
               <a
                 rel="noopener"
@@ -58,6 +59,17 @@ const Project = ({ title, description, image, link }: Props) => {
                 Source Code
               </a>
             </Link>
+            {liveDemo && (
+              <Link href={link}>
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  className="pt-4 mb-4 border-b-2 border-transparent Body w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-link dark:hover:border-b-primary-lightLink lg:pt-6"
+                >
+                  Live Demo
+                </a>
+              </Link>
+            )}
           </motion.p>
         </motion.div>
         {/* Mobile View */}
@@ -73,7 +85,7 @@ const Project = ({ title, description, image, link }: Props) => {
         >
           {description ? description : "Description of project"}
         </motion.p>
-        <motion.p variants={item}>
+        <motion.p variants={item} className="flex gap-5">
           <Link href={link}>
             <a
               rel="noopener"
@@ -86,6 +98,20 @@ const Project = ({ title, description, image, link }: Props) => {
               Source Code
             </a>
           </Link>
+          {liveDemo && (
+            <Link href={liveDemo}>
+              <a
+                rel="noopener"
+                target="_blank"
+                className="block pt-4 mb-4 border-b-2 border-transparent Body lg:hidden w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-lightLink lg:pt-6"
+              >
+                <span className="hidden">
+                  Link to project repository source code
+                </span>
+                Live Demo
+              </a>
+            </Link>
+          )}
         </motion.p>
 
         {/* </div> */}

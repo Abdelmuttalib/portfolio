@@ -16,9 +16,10 @@ export const projects = [
   {
     title: "Full Stack Goals App",
     description:
-      "A Full Stack MERN Goals Web App with full REST API and JWT authentication. Built with React, Redux toolkit, Nodejs, Express and MongoDB. Status: In progress (final stages and preparation for deployment)",
+      "A Full Stack MERN Goals Web App with full REST API and JWT authentication. Built with React, Redux toolkit, Nodejs, Express and MongoDB.",
     image: "/goals-mern-app.png",
     link: "https://github.com/Abdelmuttalib/goals-mern-app",
+    liveDemo: "https://goalsfirstmernapp.herokuapp.com/login",
   },
   {
     title: "Spotify Clone",
