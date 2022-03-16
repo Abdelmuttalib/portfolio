@@ -60,7 +60,7 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
               </a>
             </Link>
             {liveDemo && (
-              <Link href={link}>
+              <Link href={liveDemo}>
                 <a
                   rel="noopener"
                   target="_blank"
