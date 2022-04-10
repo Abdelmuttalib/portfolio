@@ -5,12 +5,9 @@
 
 @import "tailwindcss/utilities";
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer base {
   html {
+    scroll-behavior: smooth;
     @apply font-WorkSans;
   }
 }
