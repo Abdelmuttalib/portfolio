@@ -35,6 +35,7 @@ const Layout = ({ children }: ChildProps) => {
       <footer className="flex items-center justify-between py-5 pr-8 mt-20 border-t dark:text-primary-200 text-primary Caption dark:border-t-primary-500 dark:border-opacity-20">
         <Link href="https://github.com/Abdelmuttalib">
           <a
+            id="GithubLink"
             target="_blank"
             rel="noopener"
             className="flex items-center lg:text-md"
@@ -48,6 +49,7 @@ const Layout = ({ children }: ChildProps) => {
         <div className="flex items-center justify-center gap-3 h-fit">
           <Link href="https://www.linkedin.com/in/abdelmuttalib-ahmed-81919b160/">
             <a
+              id="LinkedinLink"
               target="_blank"
               rel="noopener"
               aria-label="LinkedIn"
@@ -60,13 +62,14 @@ const Layout = ({ children }: ChildProps) => {
 
           <Link href="https://github.com/Abdelmuttalib">
             <a
+              id="GithubLink"
               target="_blank"
               rel="noopener"
               aria-label="GitHub"
               className="transform translate ease-in-out duration-500 hover:translate-x-1"
             >
               <span className="hidden">Link to GitHub personal account</span>
-              <GitHubIcon className="w-5 h-5 md:w-6 md:h-6" />
+              <GitHubIcon className="w-5 h-5 md:w-6 md:h-6 text-primary-400" />
             </a>
           </Link>
         </div>

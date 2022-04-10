@@ -170,6 +170,7 @@ const ContactMe = () => {
           <p className="mb-10 text-2xl">Or..</p>
           <span className="transform translate translate-x-0 hover:bg-primary-link ease-in-out duration-200 hover:ml-1 hover:translate-x-5 ">
             <a
+              id="EmailLink"
               rel="noreferrer"
               target="_blank"
               className="px-4 py-3 rounded-lg transform translate ease-in-out duration-400 bg-primary-link text-primary-50 dark:text-primary-700 dark:bg-primary-lightLink"
@@ -186,6 +187,7 @@ const ContactMe = () => {
             <p className="mt-2 mb-10 text-2xl">Or..</p>
 
             <a
+              id="EmailLink"
               rel="noreferrer"
               target="_blank"
               className="px-4 py-3 text-lg ButtonLink h-fit bg-primary-link text-primary-50 dark:bg-primary-lightLink dark:text-primary-900 translate translate-x-0 hover:translate-x-1"
