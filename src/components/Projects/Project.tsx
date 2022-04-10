@@ -2,6 +2,8 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
+import GithubIcon from "../../../public/svgs/GithubIcon.svg"
+
 export interface Props {
   title: string
   description: string
@@ -52,16 +54,19 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
           <motion.p variants={item} className="flex pt-14 gap-6">
             <Link href={link}>
               <a
+                id="GithubLink"
                 rel="noopener"
                 target="_blank"
-                className="pt-4 mb-4 border-b-2 border-transparent Body w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-link dark:hover:border-b-primary-lightLink lg:pt-6"
+                className="flex items-center pt-4 mb-4 border-b-2 border-transparent Body w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-link dark:hover:border-b-primary-lightLink lg:pt-6 gap-1"
               >
+                <GithubIcon className="text-primary-link dark:text-primary-lightLink" />
                 Source Code
               </a>
             </Link>
             {liveDemo && (
               <Link href={liveDemo}>
                 <a
+                  id="GithubLink"
                   rel="noopener"
                   target="_blank"
                   className="pt-4 mb-4 border-b-2 border-transparent Body w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-link dark:hover:border-b-primary-lightLink lg:pt-6"
@@ -88,19 +93,22 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
         <motion.p variants={item} className="flex gap-5">
           <Link href={link}>
             <a
+              id="GithubLink"
               rel="noopener"
               target="_blank"
-              className="block pt-4 mb-4 border-b-2 border-transparent Body lg:hidden w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-lightLink lg:pt-6"
+              className="flex items-center pt-4 mb-4 border-b-2 border-transparent Body lg:hidden w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-lightLink lg:pt-6 gap-1"
             >
               <span className="hidden">
                 Link to project repository source code
               </span>
+              <GithubIcon className="text-primary-link dark:text-primary-lightLink" />
               Source Code
             </a>
           </Link>
           {liveDemo && (
             <Link href={liveDemo}>
               <a
+                id="GithubLink"
                 rel="noopener"
                 target="_blank"
                 className="block pt-4 mb-4 border-b-2 border-transparent Body lg:hidden w-fit text-primary-link dark:text-primary-lightLink transform translate ease-in-out duration-500 hover:translate-x-1 hover:border-b-primary-lightLink lg:pt-6"
@@ -121,6 +129,7 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
         >
           <Link href={link}>
             <a
+              id="GithubLink"
               target="_blank"
               rel="noopener"
               className="transform ease-in-out duration-300 scale-100 hover:scale-110"
@@ -139,6 +148,7 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
         <motion.div variants={item} className="relative block  lg:hidden">
           <Link href={link}>
             <a
+              id="GithubLink"
               target="_blank"
               rel="noopener"
               className="transform ease-in-out duration-300 scale-100 hover:scale-110"
