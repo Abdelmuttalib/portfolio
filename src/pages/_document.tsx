@@ -23,7 +23,7 @@ class MyDocument extends Document {
             content="Abdelmuttalib Ahmed is a self-taught Front End Developer. Dedicated to driving innovation with the ability to follow industry and technological trends, and facilitating early adoption of innovations."
           />
           {/* Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) */}
-          <meta name="keywords" content="[username], [name], skill" />
+          <meta name="keywords" content="Abdelmuttalib, Front-End Developer" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
