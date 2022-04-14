@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -13,45 +12,32 @@ export interface Props {
 }
 
 const Project = ({ title, description, image, link, liveDemo }: Props) => {
-  const variants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { staggerChildren: 0.3, duration: 1 },
-    },
-  }
+  // const variants = {
+  //   hidden: { opacity: 0, y: 10 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { staggerChildren: 0.3, duration: 1 },
+  //   },
+  // }
 
-  const item = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  }
+  // const item = {
+  //   hidden: { opacity: 0, y: 30 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  // }
+
   return (
-    <motion.div variants={item} className="flex flex-col gap-6">
-      <motion.div
-        variants={variants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="flex flex-col w-full gap-1 lg:flex-row lg:justify-between"
-      >
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col w-full gap-1 lg:flex-row lg:justify-between">
         {/* Desktop View */}
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          className="flex-col hidden lg:flex lg:gap-1 w-[50%]"
-        >
-          <motion.h3 variants={item} className="H2 dark:text-primary-100">
+        <div className="flex-col hidden lg:flex lg:gap-1 w-[50%]">
+          <h3 className="H2 dark:text-primary-100">
             {title ? title : "Project 1"}
-          </motion.h3>
-          <motion.p
-            variants={item}
-            className="w-3/4 pt-6 font-medium max-w-3/4 BodyMedium text-primary-300"
-          >
+          </h3>
+          <p className="w-3/4 pt-6 font-medium max-w-3/4 BodyMedium text-primary-300">
             {description ? description : "Description of project"}
-          </motion.p>
-          <motion.p variants={item} className="flex pt-14 gap-6">
+          </p>
+          <p className="flex pt-14 gap-6">
             <Link href={link}>
               <a
                 id="GithubLink"
@@ -75,22 +61,16 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
                 </a>
               </Link>
             )}
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
         {/* Mobile View */}
-        <motion.h3
-          variants={item}
-          className="block H2 lg:hidden dark:text-primary-100"
-        >
+        <h3 className="block H2 lg:hidden dark:text-primary-100">
           {title ? title : "Project 1"}
-        </motion.h3>
-        <motion.p
-          variants={item}
-          className="block font-medium BodyMedium lg:hidden text-primary-400"
-        >
+        </h3>
+        <p className="block font-medium BodyMedium lg:hidden text-primary-400">
           {description ? description : "Description of project"}
-        </motion.p>
-        <motion.p variants={item} className="flex gap-5">
+        </p>
+        <p className="flex gap-5">
           <Link href={link}>
             <a
               id="GithubLink"
@@ -120,13 +100,10 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
               </a>
             </Link>
           )}
-        </motion.p>
+        </p>
 
         {/* </div> */}
-        <motion.span
-          variants={item}
-          className="relative items-start hidden w-[50%] lg:block"
-        >
+        <span className="relative items-start hidden w-[50%] lg:block">
           <Link href={link}>
             <a
               id="GithubLink"
@@ -144,8 +121,8 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
               />
             </a>
           </Link>
-        </motion.span>
-        <motion.div variants={item} className="relative block  lg:hidden">
+        </span>
+        <div className="relative block  lg:hidden">
           <Link href={link}>
             <a
               id="GithubLink"
@@ -163,9 +140,9 @@ const Project = ({ title, description, image, link, liveDemo }: Props) => {
               />
             </a>
           </Link>
-        </motion.div>
-      </motion.div>
-    </motion.div>
+        </div>
+      </div>
+    </div>
   )
 }
 

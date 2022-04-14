@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 import emailjs from "@emailjs/browser"
-import { motion } from "framer-motion"
 import { useForm, SubmitHandler } from "react-hook-form"
 
 import Gmail from "../../../public/svgs/GmailIcon.svg"
@@ -43,38 +42,24 @@ const ContactMe = () => {
       )
   }
 
-  const variants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { staggerChildren: 0.3, duration: 1 },
-    },
-  }
+  // const variants = {
+  //   hidden: { opacity: 0, y: 10 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { staggerChildren: 0.3, duration: 1 },
+  //   },
+  // }
 
-  const item = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  }
+  // const item = {
+  //   hidden: { opacity: 0, y: 30 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  // }
 
   return (
-    <motion.div
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className="w-full py-8 min-h-[300px] mt-52"
-    >
-      <motion.h3
-        variants={item}
-        className="mb-16 text-center H1 text-primary-900"
-      >
-        Contact Me
-      </motion.h3>
-      <motion.div
-        variants={item}
-        className="flex flex-col lg:flex-row lg:gap-4"
-      >
+    <div className="w-full py-8 min-h-[300px] mt-52">
+      <h3 className="mb-16 text-center H1 text-primary-900">Contact Me</h3>
+      <div className="flex flex-col lg:flex-row lg:gap-4">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col justify-center flex-grow"
@@ -210,8 +195,8 @@ const ContactMe = () => {
             live:tloob50
           </span>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   )
 }
 
