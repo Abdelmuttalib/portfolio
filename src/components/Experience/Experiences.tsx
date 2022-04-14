@@ -1,33 +1,25 @@
 import React from "react"
 
-import { motion } from "framer-motion"
-
 import ExperienceItem from "./ExperienceItem"
 
 type Props = {}
 
 const Experiences = (props: Props) => {
-  const variants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { staggerChildren: 1 },
-    },
-  }
+  // const variants = {
+  //   hidden: { opacity: 0, y: 10 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { staggerChildren: 1 },
+  //   },
+  // }
 
   // const item = {
   //   hidden: { opacity: 0, y: 30 },
   //   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   // };
   return (
-    <motion.div
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className="flex flex-col gap-20"
-    >
+    <div className="flex flex-col gap-20">
       <ExperienceItem
         period="September 2021 - PRESENT"
         companyName="Medhyve"
@@ -39,7 +31,7 @@ const Experiences = (props: Props) => {
         companyName="Happy Season"
         role="Frontend React Developer"
       />
-    </motion.div>
+    </div>
   )
 }
 
