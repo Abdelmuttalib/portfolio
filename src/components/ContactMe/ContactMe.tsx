@@ -10,6 +10,7 @@ import { Inputs } from "../../types/types"
 
 const ContactMe = () => {
   const [error, setError] = useState<boolean>(false)
+  const [msgSent, setMsgSent] = useState<boolean>(false)
   const {
     register,
     handleSubmit,
@@ -25,7 +26,7 @@ const ContactMe = () => {
         process.env.EMAIL_SERVICE_ID,
         process.env.EMAIL_TEMPLATE_ID,
         data,
-        process.env.EMAILSER_ID
+        process.env.EMAIL_USER_ID
       )
       .then(
         function (response) {
@@ -33,6 +34,10 @@ const ContactMe = () => {
             setError(true)
           } else {
             //React Hook Form function to reset the form states and values
+            setMsgSent(true)
+            setTimeout(() => {
+              setMsgSent(false)
+            }, 2000)
             reset()
           }
         },
@@ -143,11 +148,18 @@ const ContactMe = () => {
           >
             Send
           </button>
-          {error && (
-            <p className="text-red-600 dark:text-red-400">
-              *Something went wrong, please try again!
-            </p>
-          )}
+          <div className="h-20 mt-12 dark:mt-7">
+            {msgSent && (
+              <p className="w-16 text-lg font-semibold text-green-600 bg-red-300 dark:text-green-400">
+                Sent.
+              </p>
+            )}
+            {error && (
+              <p className="text-red-600 dark:text-red-400">
+                *Something went wrong, please try again!
+              </p>
+            )}
+          </div>
         </form>
 
         {/* Direct Email, small screen */}
