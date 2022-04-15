@@ -150,7 +150,7 @@ const ContactMe = () => {
           </button>
           <div className="h-20 mt-12 dark:mt-7">
             {msgSent && (
-              <p className="w-16 text-lg font-semibold text-green-600 dark:text-green-400">
+              <p className="px-4 py-1 text-lg font-semibold text-green-600 rounded-lg w-fit dark:text-green-400 dark:bg-primary">
                 Sent.
               </p>
             )}
