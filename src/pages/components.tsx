@@ -1,17 +1,18 @@
-// !STARTERCONF You can delete this page
 import clsx from 'clsx';
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
+import { Button } from '@/components/buttons';
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import PrimaryLink from '@/components/links/PrimaryLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
+import {
+  ArrowLink,
+  ButtonLink,
+  PrimaryLink,
+  UnderlineLink,
+  UnstyledLink,
+} from '@/components/links';
+import { SkeletonLoader } from '@/components/loaders';
 import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
-import Skeleton from '@/components/Skeleton';
 
 type Color = typeof colorList[number];
 
@@ -41,6 +42,14 @@ export default function ComponentsPage() {
               mode === 'dark' ? 'text-white' : 'text-black'
             )}
           >
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6</h6>
+
+            <p>Built-in Components</p>
             <h1>Built-in Components</h1>
             <ArrowLink direction='left' className='mt-2' href='/'>
               Back to Home
@@ -298,19 +307,18 @@ export default function ComponentsPage() {
                 </p>
                 <NextImage
                   useSkeleton
-                  className='w-32 md:w-40'
-                  src='/favicon/apple-icon-180x180.png'
-                  width='180'
-                  height='180'
-                  alt='Icon'
+                  className='relative h-56 w-32 rounded-md bg-red-300 md:w-40'
+                  src='/images/nextjs-logo.png'
+                  alt='Nextjs logo'
+                  objectFit='contain'
                 />
               </li>
               <li className='space-y-2'>
-                <h2 className='text-lg md:text-xl'>Skeleton</h2>
+                <h2 className='text-lg md:text-xl'>Skeleton Loader</h2>
                 <p className={clsx('!mt-1 text-sm', textColor)}>
-                  Skeleton with shimmer effect
+                  Skeleton Content Loader
                 </p>
-                <Skeleton className='h-72 w-72' />
+                <SkeletonLoader className='h-72 w-72' />
               </li>
             </ol>
           </div>
