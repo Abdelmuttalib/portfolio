@@ -14,6 +14,7 @@ export default function HomePage() {
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-7xl' />
+            <h1 className='mt-6 text-7xl'>Next.js Starter</h1>
 
             <ButtonLink className='mt-8' href='/components' variant='light'>
               See all components
