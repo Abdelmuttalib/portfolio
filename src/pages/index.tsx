@@ -1,65 +1,32 @@
-import React, { useRef } from "react";
-import {
-  Layout,
-  Projects,
-  Personal,
-  Experience,
-  ContactMe,
-} from "../components";
-import { motion } from "framer-motion";
+import { Contact, Projects } from '@/components/homepage';
+import { Layout } from '@/components/layout';
+import Seo from '@/components/Seo';
 
-export default function Home() {
-  const aboutMeRef = useRef(null);
-
-  const handleScroll = () => {
-    aboutMeRef.current.scrollIntoView();
-  };
-
-  const variants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { staggerChildren: 0.3, duration: 1 },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  };
-
+export default function HomePage() {
   return (
     <Layout>
-      <motion.header
-        variants={variants}
-        initial="hidden"
-        animate="visible"
-        className="min-h-80 h-fit pt-24 flex flex-col gap-4 sm:gap-5"
-      >
-        <motion.h1 variants={item} className="H1 lg:w-3/4">
-          Building beautiful web experiences
-        </motion.h1>
-        <motion.p variants={item} className="Body text-primary-400 lg:w-2/4">
-          Self-Taught Front End Developer, I build web applications
-        </motion.p>
-        <motion.button
-          variants={item}
-          onClick={handleScroll}
-          type="button"
-          className="Button px-7 py-3 lg:px-12 lg:py-4 mt-4"
-        >
-          About Me
-        </motion.button>
-      </motion.header>
-      {/* Personal About Me content */}
-      <Personal rel={aboutMeRef} />
-      {/* Projects section */}
+      {/* <Seo templateTitle='Home' /> */}
+      <Seo />
+
+      <section className='layout flex min-h-screen flex-col items-center justify-center bg-white text-left'>
+        <div className='mb-20 flex flex-col gap-3'>
+          <h1 className='text-7xl'>Building beautiful web experiences</h1>
+          <p className='font-roboto text-2xl font-normal tracking-tight md:pr-28'>
+            a web developer,{' '}
+            <span className='font-light italic tracking-normal underline decoration-1 underline-offset-4 duration-200 ease-linear hover:text-gray-500'>
+              sometimes designer
+            </span>
+            . Passionate about user interfaces, interactions, design systems,
+            web experiences and closing the gap between design and development
+          </p>
+        </div>
+      </section>
+
+      {/* Projects */}
       <Projects />
-      {/* Experience listing section */}
-      <Experience />
-      {/* direct Contant form section */}
-      <ContactMe />
+
+      {/* Contact */}
+      <Contact />
     </Layout>
   );
 }

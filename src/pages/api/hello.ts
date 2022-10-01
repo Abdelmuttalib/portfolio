@@ -1,8 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const hello = (req, res) => {
-  res.statusCode = 200;
-  res.json({ name: "Abdelmuttalib Ahmed" });
-};
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export default hello;
+export default function hello(req: NextApiRequest, res: NextApiResponse) {
+  res.status(200).json({ name: 'hello api' });
+}
