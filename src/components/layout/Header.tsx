@@ -2,23 +2,23 @@ import * as React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-const links = [
-  { href: '/', label: 'Route 1' },
-  { href: '/', label: 'Route 2' },
-];
+// const links = [
+//   { href: '/', label: 'Route 1' },
+//   { href: '/', label: 'Route 2' },
+// ];
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50'>
+    <header className='sticky top-0 z-50 bg-white'>
       <div className='layout flex h-14 items-center justify-between'>
         <UnstyledLink
           href='/'
           openNewTab
-          className='font-bold hover:text-gray-600'
+          className='text-lg font-bold hover:underline hover:decoration-primary-600 hover:decoration-2 hover:underline-offset-2'
         >
-          Home
+          Abdelmuttalib Ahmed
         </UnstyledLink>
-        <nav>
+        {/* <nav>
           <ul className='flex items-center justify-between space-x-4'>
             {links.map(({ href, label }) => (
               <li key={`${href}${label}`}>
@@ -28,7 +28,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );

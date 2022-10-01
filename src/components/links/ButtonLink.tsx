@@ -8,22 +8,16 @@ import UnstyledLink, {
 
 enum ButtonVariant {
   'primary',
-  'outline',
-  'ghost',
   'light',
   'dark',
 }
 
 type ButtonLinkProps = {
-  isDarkBg?: boolean;
   variant?: keyof typeof ButtonVariant;
 } & UnstyledLinkProps;
 
 const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
-  (
-    { children, className, variant = 'primary', isDarkBg = false, ...rest },
-    ref
-  ) => {
+  ({ children, className, variant = 'primary', ...rest }, ref) => {
     return (
       <UnstyledLink
         ref={ref}
@@ -43,22 +37,6 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
               'active:bg-primary-500',
               'disabled:bg-primary-400 disabled:hover:bg-primary-400',
               'duration-150 ease-linear',
-            ],
-            variant === 'outline' && [
-              'text-primary-600',
-              'border-2 border-primary-600',
-              'hover:bg-primary-50 active:bg-primary-100 disabled:bg-primary-100',
-              'duration-150 ease-linear',
-              isDarkBg &&
-                'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
-            ],
-            variant === 'ghost' && [
-              'text-primary-500',
-              'shadow-none',
-              'hover:bg-primary-50 active:bg-primary-100 disabled:bg-primary-100',
-              'duration-150 ease-linear',
-              isDarkBg &&
-                'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
             ],
             variant === 'light' && [
               'bg-white text-dark ',

@@ -1,8 +1,6 @@
+import { Contact, Projects } from '@/components/homepage';
 import { Layout } from '@/components/layout';
-import { ButtonLink } from '@/components/links';
 import Seo from '@/components/Seo';
-
-import Vercel from '~/svg/Vercel.svg';
 
 export default function HomePage() {
   return (
@@ -10,18 +8,25 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
-        <section className='bg-white'>
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <Vercel className='text-7xl' />
-            <h1 className='mt-6 text-7xl'>Next.js Starter</h1>
+      <section className='layout flex min-h-screen flex-col items-center justify-center bg-white text-left'>
+        <div className='mb-20 flex flex-col gap-3'>
+          <h1 className='text-7xl'>Building beautiful web experiences</h1>
+          <p className='font-roboto text-2xl font-normal tracking-tight md:pr-28'>
+            a web developer,{' '}
+            <span className='font-light italic tracking-normal underline decoration-1 underline-offset-4 duration-200 ease-linear hover:text-gray-500'>
+              sometimes designer
+            </span>
+            . Passionate about user interfaces, interactions, design systems,
+            web experiences and closing the gap between design and development
+          </p>
+        </div>
+      </section>
 
-            <ButtonLink className='mt-8' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-          </div>
-        </section>
-      </main>
+      {/* Projects */}
+      <Projects />
+
+      {/* Contact */}
+      <Contact />
     </Layout>
   );
 }
