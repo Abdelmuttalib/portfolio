@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Button } from '@/components/buttons';
+import { Button } from "@/components/buttons";
 
 const StopButton = () => {
   const [size, setSize] = useState<number>(6);
-  const [randomColor, setRandomColor] = useState<string>('#1c1ec1');
+  const [randomColor, setRandomColor] = useState<string>("#1c1ec1");
 
   const generateRandomColor = () => {
     const maxVal = 0xffffff; // 16777215
@@ -18,7 +18,7 @@ const StopButton = () => {
   return (
     <>
       <button
-        type='button'
+        type="button"
         onClick={() => {
           setSize((prevValue) => prevValue * 2);
           setRandomColor(generateRandomColor);
@@ -28,17 +28,17 @@ const StopButton = () => {
           height: `${size}rem`,
           backgroundColor: randomColor,
         }}
-        className='rounded-md bg-primary-600 font-medium'
+        className="rounded-md bg-primary-600 font-medium"
       >
         StopButton
       </button>
 
       <Button
-        type='button'
+        type="button"
         onClick={() => {
           setSize(6);
         }}
-        className='absolute right-10 z-50'
+        className="absolute right-10 z-50"
       >
         reset button state
       </Button>

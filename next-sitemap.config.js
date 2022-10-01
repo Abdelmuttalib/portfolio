@@ -3,9 +3,9 @@
  */
 module.exports = {
   /** Without additional '/' on the end, e.g. https://abdelmuttalib.xyz */
-  siteUrl: '',
+  siteUrl: "",
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: [{ userAgent: "*", allow: "/" }],
   },
 };
