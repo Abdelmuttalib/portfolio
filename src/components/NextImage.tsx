@@ -1,7 +1,7 @@
-import Image, { ImageProps } from 'next/image';
-import * as React from 'react';
+import Image, { ImageProps } from "next/image";
+import * as React from "react";
 
-import clsxm from '@/lib/clsxm';
+import clsxm from "@/lib/clsxm";
 
 type NextImageProps = {
   useSkeleton?: boolean;
@@ -9,10 +9,10 @@ type NextImageProps = {
   blurClassName?: string;
   alt: string;
   width?: string | number;
-  layout?: ImageProps['layout'];
+  layout?: ImageProps["layout"];
 } & (
   | { width?: string | number; height?: string | number }
-  | { layout: 'fill'; width?: string | number; height?: string | number }
+  | { layout: "fill"; width?: string | number; height?: string | number }
 ) &
   ImageProps;
 
@@ -26,7 +26,7 @@ export default function NextImage({
   src,
   width,
   height,
-  layout = 'fill',
+  layout = "fill",
   alt,
   className,
   imgClassName,
@@ -34,9 +34,9 @@ export default function NextImage({
   ...rest
 }: NextImageProps) {
   const [status, setStatus] = React.useState(
-    useSkeleton ? 'loading' : 'complete'
+    useSkeleton ? "loading" : "complete"
   );
-  const widthIsSet = className?.includes('w-') ?? false;
+  const widthIsSet = className?.includes("w-") ?? false;
 
   return (
     <figure
@@ -46,13 +46,13 @@ export default function NextImage({
       <Image
         className={clsxm(
           imgClassName,
-          status === 'loading' && clsxm('animate-pulse', blurClassName)
+          status === "loading" && clsxm("animate-pulse", blurClassName)
         )}
         src={src}
         width={width}
         height={height}
         alt={alt}
-        onLoadingComplete={() => setStatus('complete')}
+        onLoadingComplete={() => setStatus("complete")}
         layout={layout}
         {...rest}
       />

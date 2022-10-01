@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 
-import UnstyledLink from '@/components/links/UnstyledLink';
+import UnstyledLink from "@/components/links/UnstyledLink";
 
 // const links = [
 //   { href: '/', label: 'Route 1' },
@@ -9,12 +9,12 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50 bg-white'>
-      <div className='layout flex h-14 items-center justify-between'>
+    <header className="sticky top-0 z-50 bg-white">
+      <div className="layout flex h-14 items-center justify-between">
         <UnstyledLink
-          href='/'
+          href="/"
           openNewTab
-          className='text-lg font-bold hover:underline hover:decoration-primary-600 hover:decoration-2 hover:underline-offset-2'
+          className="text-lg font-bold hover:underline hover:decoration-primary-600 hover:decoration-2 hover:underline-offset-2"
         >
           Abdelmuttalib Ahmed
         </UnstyledLink>
