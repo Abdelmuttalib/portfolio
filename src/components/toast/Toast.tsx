@@ -16,7 +16,8 @@ const Toast = ({ toast }: { toast: ToastT }) => {
     return () => {
       clearTimeout(toastTimer);
     };
-  }, [id, removeToast]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <motion.div

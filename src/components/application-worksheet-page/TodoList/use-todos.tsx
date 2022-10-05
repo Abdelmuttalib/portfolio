@@ -34,7 +34,8 @@ const useTodos = () => {
     unsubscribe();
 
     return unsubscribe();
-  }, [isLoading, todosCollectionRef]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return { todos, isLoading };
 };
