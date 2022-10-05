@@ -38,7 +38,7 @@ const StopButton = () => {
         onClick={() => {
           setSize(6);
         }}
-        className="absolute right-10 z-50"
+        className="absolute bottom-64 z-50 lg:bottom-auto lg:right-10"
       >
         reset button state
       </Button>

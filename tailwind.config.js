@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ["Roboto", ...fontFamily.sans],
+        // switzer: ["Switzer", "sans-serif"],
       },
       colors: {
         primary: {

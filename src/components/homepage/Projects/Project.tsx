@@ -26,7 +26,12 @@ const Project = ({
   liveDemoLink,
 }: ProjectProps) => {
   return (
-    <div className="grid min-w-[400px] max-w-4xl rounded-md px-10 py-9 md:h-80 md:min-w-[900px] md:grid-cols-2">
+    <div className="relative grid min-w-[400px] max-w-4xl rounded-md px-10 py-9 md:h-80 md:min-w-[900px] md:grid-cols-2">
+      {projectTitle === "PódX" && (
+        <span className="absolute right-0 top-5 z-10 w-fit rounded-full bg-teal-100/50 px-4 py-1 font-medium text-teal-700">
+          In progress...
+        </span>
+      )}
       <div className="relative mb-8 flex h-full flex-col justify-between">
         <div className="max-w-xs space-y-1 pr-4">
           <h2>{projectTitle}</h2>

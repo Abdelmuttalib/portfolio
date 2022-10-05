@@ -1,7 +1,7 @@
 [
   {
     "title": "PódX",
-    "description": "In progress, a modern podcasts PWA",
+    "description": "a modern podcasts PWA",
     "technologies": "React, Nextjs, TailwindCSS, SWR, Typescript, PWA, Workbox",
     "image": "podx-pwa.png",
     "link": "https://github.com/Abdelmuttalib/PodX"
