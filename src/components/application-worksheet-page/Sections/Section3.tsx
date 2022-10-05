@@ -45,7 +45,9 @@ const Section3 = () => {
         </h3>
         <div className="flex items-center gap-3">
           <h3 className="pl-9">Front End: </h3>
-          <h4 className="font-normal italic text-gray-700">React, Nextjs</h4>
+          <h4 className="font-normal italic text-gray-700">
+            React, Nextjs, TypeScript
+          </h4>
         </div>
         <div className="flex items-center gap-3">
           <h3 className="pl-9">Back End: </h3>
