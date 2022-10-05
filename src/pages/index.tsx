@@ -10,7 +10,7 @@ export default function HomePage() {
 
       <section className="layout flex min-h-screen flex-col items-center justify-center bg-white text-left">
         <div className="mb-20 flex flex-col gap-4 tracking-tight">
-          <h1 className="text-left text-8xl tracking-[-0.4rem]">
+          <h1 className="bg-gradient-to-br from-primary-600 to-gray-800 bg-clip-text text-left text-8xl tracking-[-0.4rem] text-transparent">
             Building beautiful web experiences
           </h1>
           <p className="font-roboto text-2xl font-normal md:pr-28">

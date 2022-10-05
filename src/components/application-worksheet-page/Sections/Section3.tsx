@@ -156,7 +156,7 @@ const Section3 = () => {
       <div className="layout mt-20 flex flex-col gap-3">
         <h3>8. What is your expected salary?</h3>
         {/* 8. answer */}
-        <h4 className="pl-9 font-normal">60k</h4>
+        <h4 className="pl-9 font-normal">50k</h4>
       </div>
       {/* 9. */}
       <div className="layout mt-20 flex flex-col gap-3">
