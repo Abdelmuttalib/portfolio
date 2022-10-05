@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  ApplicationInformation,
   Section1,
   Section2,
   Section3,
@@ -18,7 +19,7 @@ const FullStackReactDeveloperWorksheetPage = () => {
       <section>
         <div className="flex flex-col gap-40 py-40 text-center">
           {/* Application Information */}
-          {/* <ApplicationInformation /> */}
+          <ApplicationInformation />
           {/* Section 1: Open Ended Questions */}
           <Section1 />
           {/* Section 2: Coding Activities */}

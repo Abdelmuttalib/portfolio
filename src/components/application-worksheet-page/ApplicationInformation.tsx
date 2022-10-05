@@ -4,8 +4,8 @@ import ApplicationInfoField from "./ApplicationInfoField";
 
 const ApplicationInformation = () => {
   return (
-    <div className="layout flex flex-col gap-3 bg-blue-300 text-left">
-      <h3>Application Information</h3>
+    <div className="layout flex flex-col gap-3 text-left">
+      <h2>Application Information</h2>
       <div className="flex flex-col">
         <ApplicationInfoField
           field="Full Name: "
@@ -16,7 +16,7 @@ const ApplicationInformation = () => {
           value="abdelmuttalib1@gmail.com"
         />
         <ApplicationInfoField field="Phone Number: " value="+639455102063" />
-        <ApplicationInfoField field="Date: " value="October 1, 2022" />
+        <ApplicationInfoField field="Date: " value="October 5, 2022" />
         <ApplicationInfoField
           field="Prefered Job Level: "
           value="Junior, Mid"

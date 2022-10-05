@@ -18,9 +18,10 @@ const Section3 = () => {
             <span className="mx-1 text-primary-700">
               https://random-data-api.com/api/v2/users
             </span>{" "}
-            and displaying them on a web page? (Yes or no)
+            and displaying them on a web page?
           </h3>
-          <p>- solution below</p>
+          <h4 className="pl-9 font-normal">Yes</h4>
+          <p className="pl-9">- solution below</p>
         </div>
       </div>
       {/* 1. */}
@@ -192,7 +193,7 @@ const Section3 = () => {
         </h3>
         {/* 12. answer */}
         <h4 className="pl-9 font-normal">
-          7<br />I have been doing presentation during my last experience where
+          7<br />I have been doing presentations during my last experience where
           we used to present about a topic or a new skill we learned during the
           week, for example UI Design Fundamentals
         </h4>

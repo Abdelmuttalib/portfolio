@@ -7,21 +7,21 @@ import TodoList from "../TodoList/TodoList";
 const Section5 = () => {
   return (
     <div className="flex flex-col gap-3 text-left">
-      <div className="layout flex flex-col gap-5">
+      <div className="layout flex flex-col">
         <h1 className="w-fit border-b-4 border-primary-600">
           Section 5: For Mid and Seniors only
         </h1>
       </div>
 
-      {/* #3 question */}
-      <div className="layout mt-20 flex flex-col gap-3">
+      {/* #1 question */}
+      <div className="layout mt-8 flex flex-col gap-3">
         <h3>
           1. Do the Optional Section in Section 2: Coding Activities.
           <br />
         </h3>
         <h3 className="inline-flex pl-10 font-normal">
+          <CheckCircleIcon className="ml-1 w-8 text-primary-600" />
           Done
-          <CheckCircleIcon className="ml-1 w-7 text-primary-600" />
         </h3>
       </div>
 

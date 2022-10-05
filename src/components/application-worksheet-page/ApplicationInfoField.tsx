@@ -6,9 +6,9 @@ const ApplicationInfoField = ({
   value: string;
 }) => {
   return (
-    <div className="flex items-center gap-1">
-      <p className="font-medium">{field}</p>
-      <p className="text-gray-800">{value}</p>
+    <div className="flex items-center gap-2">
+      <h3 className="font-medium">{field}</h3>
+      <h4 className="font-normal text-gray-800">{value}</h4>
     </div>
   );
 };
