@@ -7,13 +7,12 @@ export default function HomePage() {
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-
-      <section className="layout flex min-h-screen flex-col items-center justify-center bg-white text-left">
-        <div className="mb-20 flex flex-col gap-4 tracking-tight">
-          <h1 className="bg-gradient-to-br from-primary-600 to-gray-800 bg-clip-text text-left text-8xl tracking-[-0.4rem] text-transparent">
+      <section className="layout flex min-h-screen flex-col items-center justify-center text-left">
+        <div className="mb-20 flex flex-col gap-4">
+          <h1 className="text-left text-7xl tracking-[-0.3rem]">
             Building beautiful web experiences
           </h1>
-          <p className="font-roboto text-2xl font-normal md:pr-28">
+          <p className="font-roboto text-xl font-normal md:pr-28">
             a web developer,{" "}
             <span className="font-light italic tracking-normal underline decoration-1 underline-offset-4 duration-200 ease-linear hover:text-gray-500">
               sometimes designer
