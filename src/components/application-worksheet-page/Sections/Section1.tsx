@@ -5,7 +5,7 @@ import ApplicationQuestionAndAnswerField from "../ApplicationQuestionAndAnswerFi
 const Section1 = () => {
   return (
     <div className="layout flex flex-col gap-5 text-left">
-      <h1 className="w-fit border-b-4 border-primary-600">
+      <h1 className="border-primary-600 w-fit border-b-4">
         Section 1: Open Ended Questions
       </h1>
       <div className="flex flex-col gap-5">

@@ -14,7 +14,7 @@ export default function Header() {
         <UnstyledLink
           href="/"
           openNewTab
-          className="text-lg font-bold hover:underline hover:decoration-primary-600 hover:decoration-2 hover:underline-offset-2"
+          className="hover:decoration-primary-600 text-lg font-bold hover:underline hover:decoration-2 hover:underline-offset-2"
         >
           Abdelmuttalib Ahmed
         </UnstyledLink>

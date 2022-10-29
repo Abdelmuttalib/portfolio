@@ -8,7 +8,7 @@ const Section5 = () => {
   return (
     <div className="flex flex-col gap-3 text-left">
       <div className="layout flex flex-col">
-        <h1 className="w-fit border-b-4 border-primary-600">
+        <h1 className="border-primary-600 w-fit border-b-4">
           Section 5: For Mid and Seniors only
         </h1>
       </div>
@@ -20,7 +20,7 @@ const Section5 = () => {
           <br />
         </h3>
         <h3 className="inline-flex pl-10 font-normal">
-          <CheckCircleIcon className="ml-1 w-8 text-primary-600" />
+          <CheckCircleIcon className="text-primary-600 ml-1 w-8" />
           Done
         </h3>
       </div>
@@ -37,7 +37,7 @@ const Section5 = () => {
         <p>- solution below</p>
       </div>
       {/* #2 solution */}
-      <div className="relative flex h-auto min-h-screen w-full flex-col items-center justify-center gap-7 bg-primary-50 py-40">
+      <div className="bg-primary-50 relative flex h-auto min-h-screen w-full flex-col items-center justify-center gap-7 py-40">
         <h2 className="text-6xl">Pokemon CardList</h2>
         <PokemonCardList />
       </div>
@@ -58,7 +58,7 @@ const Section5 = () => {
         <p className="pl-10">- solution below</p>
       </div>
       {/* #3 solution */}
-      <div className="relative flex min-h-screen w-full items-center justify-center bg-primary-50 py-40">
+      <div className="bg-primary-50 relative flex min-h-screen w-full items-center justify-center py-40">
         <TodoList />
       </div>
       {/* #3 question */}

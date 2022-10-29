@@ -10,7 +10,7 @@ const Section2 = () => {
   return (
     <div className="flex flex-col gap-3 text-left">
       <div className="layout flex flex-col gap-5">
-        <h1 className="w-fit border-b-4 border-primary-600">
+        <h1 className="border-primary-600 w-fit border-b-4">
           Section 2: Coding Activities
         </h1>
 
@@ -21,7 +21,7 @@ const Section2 = () => {
       </div>
 
       {/* #1 solution */}
-      <div className="flex h-screen w-full items-center justify-center bg-primary-50">
+      <div className="bg-primary-50 flex h-screen w-full items-center justify-center">
         <h2 className="text-7xl">Hello World</h2>
       </div>
 
@@ -40,7 +40,7 @@ const Section2 = () => {
       </div>
 
       {/* #2 solution */}
-      <div className="flex w-full justify-center bg-primary-50 py-40">
+      <div className="bg-primary-50 flex w-full justify-center py-40">
         <Counter />
       </div>
 
@@ -60,7 +60,7 @@ const Section2 = () => {
       </div>
 
       {/* #3 solution */}
-      <div className="flex w-full justify-center bg-primary-50 py-40">
+      <div className="bg-primary-50 flex w-full justify-center py-40">
         <Calculator />
       </div>
 
@@ -77,7 +77,7 @@ const Section2 = () => {
       </div>
 
       {/* #4 solution */}
-      <div className="relative flex h-screen w-full items-center justify-center bg-primary-50 py-40">
+      <div className="bg-primary-50 relative flex h-screen w-full items-center justify-center py-40">
         <StopButton />
       </div>
 
@@ -92,7 +92,7 @@ const Section2 = () => {
       </div>
 
       {/* #5 solution */}
-      <div className="relative flex h-auto min-h-screen w-full items-center justify-center bg-primary-50 py-40">
+      <div className="bg-primary-50 relative flex h-auto min-h-screen w-full items-center justify-center py-40">
         <TodoList />
       </div>
 

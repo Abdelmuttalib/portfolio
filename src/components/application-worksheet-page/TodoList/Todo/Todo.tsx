@@ -11,7 +11,7 @@ const Todo = ({ todoData }: { todoData: TodoT }) => {
   const [editMode, setEditMode] = useState<boolean>(false);
   const { id, title, day, checked } = todoData;
   return (
-    <div className="relative flex h-36 w-full items-center rounded-md bg-white py-4 px-6 shadow-2xl shadow-primary-100">
+    <div className="shadow-primary-100 relative flex h-36 w-full items-center rounded-md bg-white py-4 px-6 shadow-2xl">
       {editMode ? (
         <EditTodoForm todoData={todoData} setEditMode={setEditMode} />
       ) : (
@@ -28,7 +28,7 @@ const Todo = ({ todoData }: { todoData: TodoT }) => {
                 checked={checked}
                 type="checkbox"
                 onChange={() => updateCheckedTodo(id, checked)}
-                className="mr-1 h-5 w-5 cursor-pointer rounded-md font-semibold text-primary-600"
+                className="text-primary-600 mr-1 h-5 w-5 cursor-pointer rounded-md font-semibold"
               />
               Checked
             </label>
@@ -36,12 +36,12 @@ const Todo = ({ todoData }: { todoData: TodoT }) => {
           <XCircleIcon
             onClick={() => deleteTodo(id)}
             aria-label="delete todo"
-            className="absolute right-4 top-4 w-8 cursor-pointer text-primary-500"
+            className="text-primary-500 absolute right-4 top-4 w-8 cursor-pointer"
           />
           <PencilIcon
             onClick={() => setEditMode(true)}
             aria-label="edit todo"
-            className="absolute right-14 top-4 mt-0.5 h-[27px] w-[27px] cursor-pointer rounded-full bg-primary-500 p-1.5 text-white"
+            className="bg-primary-500 absolute right-14 top-4 mt-0.5 h-[27px] w-[27px] cursor-pointer rounded-full p-1.5 text-white"
           />
         </>
       )}

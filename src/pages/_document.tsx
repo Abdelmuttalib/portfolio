@@ -24,6 +24,22 @@ class MyDocument extends Document {
           />
           {/* Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) */}
           <meta name="keywords" content="[username], [name], skill" />
+
+          <link
+            rel="preload"
+            href="/fonts/inter-var-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            rel="preload"
+            href="/fonts/cal-sans/CalSans-SemiBold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           {/* Roboto Font */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

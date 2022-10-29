@@ -33,7 +33,7 @@ const AddTodoForm = () => {
             inputMode="text"
             placeholder="todo title"
             {...register("title", { required: true })}
-            className="w-full rounded-md border-2 border-primary-100 px-4 py-2 outline-none lg:w-64"
+            className="border-primary-100 w-full rounded-md border-2 px-4 py-2 outline-none lg:w-64"
           />
           {errors.title && (
             <p className="text-sm text-red-600">
@@ -47,7 +47,7 @@ const AddTodoForm = () => {
             inputMode="text"
             placeholder="todo day"
             {...register("day", { required: true })}
-            className="w-full rounded-md border-2 border-primary-100 px-4 py-2 outline-none lg:w-64"
+            className="border-primary-100 w-full rounded-md border-2 px-4 py-2 outline-none lg:w-64"
           />
           {errors.day && (
             <p className="text-sm text-red-600">
@@ -61,7 +61,7 @@ const AddTodoForm = () => {
             id="checked"
             {...register("checked")}
             type="checkbox"
-            className="mr-1 h-5 w-5 cursor-pointer rounded-md font-semibold text-primary-600"
+            className="text-primary-600 mr-1 h-5 w-5 cursor-pointer rounded-md font-semibold"
           />
           Checked
         </label>

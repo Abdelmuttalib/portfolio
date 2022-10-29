@@ -50,7 +50,7 @@ const ApiDataFetchingExample = () => {
         </Button>
       </div>
 
-      <div className="flex h-96 w-full flex-col items-center justify-center rounded bg-gradient-to-tr from-primary-800 to-primary-300">
+      <div className="from-primary-800 to-primary-300 flex h-96 w-full flex-col items-center justify-center rounded bg-gradient-to-tr">
         {!fetchData && <CreditCardPlaceholder />}
         {fetchData && isLoading && <CreditCardLoader />}
         {fetchData && data && (

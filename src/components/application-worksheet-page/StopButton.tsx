@@ -28,7 +28,7 @@ const StopButton = () => {
           height: `${size}rem`,
           backgroundColor: randomColor,
         }}
-        className="rounded-md bg-primary-600 font-medium"
+        className="bg-primary-600 rounded-md font-medium"
       >
         StopButton
       </button>
