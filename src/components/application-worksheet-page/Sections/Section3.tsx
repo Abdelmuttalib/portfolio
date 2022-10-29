@@ -8,14 +8,14 @@ const Section3 = () => {
   return (
     <div className="flex flex-col gap-6 text-left">
       <div className="layout flex flex-col gap-5">
-        <h1 className="w-fit border-b-4 border-primary-600">
+        <h1 className="border-primary-600 w-fit border-b-4">
           Section 3: Experience
         </h1>
 
         <div className="flex flex-col gap-3">
           <h3>
             1. Are you comfortable with fetching data from API’s, such as
-            <span className="mx-1 text-primary-700">
+            <span className="text-primary-700 mx-1">
               https://random-data-api.com/api/v2/users
             </span>{" "}
             and displaying them on a web page?
@@ -25,7 +25,7 @@ const Section3 = () => {
         </div>
       </div>
       {/* 1. */}
-      <div className="flex h-screen w-full flex-col items-center justify-center bg-primary-50">
+      <div className="bg-primary-50 flex h-screen w-full flex-col items-center justify-center">
         <ApiDataFetchingExample />
       </div>
       {/* 2. */}

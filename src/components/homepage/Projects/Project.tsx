@@ -8,7 +8,6 @@ import GithubIcon from "~/svg/GithubIcon.svg";
 
 export type ProjectProps = {
   projectTitle: string;
-  projectDescription: string;
   projectTechnologies: string;
   imagePath: string;
   githubLink: string;

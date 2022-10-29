@@ -15,7 +15,7 @@ const Calculator = () => {
           type="number"
           inputMode="numeric"
           placeholder="0"
-          className="w-32 rounded-md border-2 border-primary-100 px-4 py-2 outline-none"
+          className="border-primary-100 w-32 rounded-md border-2 px-4 py-2 outline-none"
           value={firstInput}
           onChange={(e) => setFirstInput(Number(e.target.value))}
         />
@@ -23,7 +23,7 @@ const Calculator = () => {
           type="number"
           inputMode="numeric"
           placeholder="0"
-          className="w-32 rounded-md border-2 border-primary-100 px-4 py-2 outline-none"
+          className="border-primary-100 w-32 rounded-md border-2 px-4 py-2 outline-none"
           value={secondInput}
           onChange={(e) => setSecondInput(Number(e.target.value))}
         />

@@ -46,7 +46,7 @@ const CreateAccountForm = ({
             {...register("email", { required: true })}
             placeholder="email"
             inputMode="email"
-            className="p w-full rounded-md border-2 border-primary-100 px-4 py-2 outline-none"
+            className="p border-primary-100 w-full rounded-md border-2 px-4 py-2 outline-none"
           />
           {errors.email && (
             <p className="mt-0.5 text-sm text-red-600">
@@ -62,7 +62,7 @@ const CreateAccountForm = ({
             inputMode="text"
             {...register("password", { required: true })}
             placeholder="password"
-            className="p w-full rounded-md border-2 border-primary-100 px-4 py-2 outline-none"
+            className="p border-primary-100 w-full rounded-md border-2 px-4 py-2 outline-none"
           />
           {errors.password && (
             <p className="mt-0.5 text-sm text-red-600">
@@ -77,7 +77,7 @@ const CreateAccountForm = ({
             inputMode="text"
             {...register("confirmPassword", { required: true })}
             placeholder="confirm password"
-            className="p w-full rounded-md border-2 border-primary-100 px-4 py-2 outline-none"
+            className="p border-primary-100 w-full rounded-md border-2 px-4 py-2 outline-none"
           />
 
           {errors.confirmPassword && (
@@ -97,7 +97,7 @@ const CreateAccountForm = ({
           <Button
             type="button"
             onClick={() => toggleSignInForm()}
-            className="mx-0.5 rounded-none border-none bg-transparent px-0 py-0 text-primary-600 shadow-none hover:bg-transparent hover:text-primary-500 active:border-b-2 active:border-primary-600 active:bg-transparent"
+            className="text-primary-600 hover:text-primary-500 active:border-primary-600 mx-0.5 rounded-none border-none bg-transparent px-0 py-0 shadow-none hover:bg-transparent active:border-b-2 active:bg-transparent"
           >
             Sign in
           </Button>
