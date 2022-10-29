@@ -39,31 +39,35 @@ const contactDetails = [
 
 const Contact = () => {
   return (
-    <section className="layout mt-96 mb-60 h-80">
+    <section className="layout mt-96 mb-60 h-56">
       <div className="">
         <h2>Contact</h2>
       </div>
-      <div className="my-10 grid gap-y-4 md:grid-cols-2">
+      <div className="md:grid-cols-auto my-10 flex flex-wrap gap-x-10 gap-y-5">
         {/* Email Contact Item */}
         {contactDetails.map(({ link, label, icon, notLink }) =>
           !notLink ? (
             <UnstyledLink
               key={link}
               href={link}
-              className="flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary-50 pr-6 duration-150 ease-linear hover:bg-primary-100/50"
+              className="group flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:bg-primary/10"
             >
-              <div className="rounded-full bg-primary-100/40 p-2">
-                <div className="rounded-full bg-primary-100/70 p-2">{icon}</div>
+              <div className="rounded-full p-2">
+                <div className="rounded-full bg-primary/25 p-3 duration-200 ease-linear group-hover:ml-1">
+                  {icon}
+                </div>
               </div>
               <p className="font-semibold text-gray-700">{label}</p>
             </UnstyledLink>
           ) : (
             <div
               key={label}
-              className="flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary-50 pr-4 duration-150 ease-linear hover:bg-primary-100/50"
+              className="group flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:bg-primary/10"
             >
-              <div className="rounded-full bg-primary-100/50 p-2">
-                <div className="rounded-full bg-primary-100/70 p-2">{icon}</div>
+              <div className="rounded-full p-2">
+                <div className="rounded-full bg-primary/20 p-3 duration-200 ease-linear group-hover:ml-1">
+                  {icon}
+                </div>
               </div>
               <p className="font-semibold text-gray-700">{label}</p>
             </div>
