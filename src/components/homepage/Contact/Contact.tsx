@@ -50,24 +50,20 @@ const Contact = () => {
             <UnstyledLink
               key={link}
               href={link}
-              className="group flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:bg-primary/10"
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:ring-primary"
             >
               <div className="rounded-full p-2">
-                <div className="rounded-full bg-primary/25 p-3 duration-200 ease-linear group-hover:ml-1">
-                  {icon}
-                </div>
+                <div className="rounded-full p-2">{icon}</div>
               </div>
               <p className="font-semibold text-gray-700">{label}</p>
             </UnstyledLink>
           ) : (
             <div
               key={label}
-              className="group flex w-fit cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:bg-primary/10"
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:ring-primary"
             >
               <div className="rounded-full p-2">
-                <div className="rounded-full bg-primary/20 p-3 duration-200 ease-linear group-hover:ml-1">
-                  {icon}
-                </div>
+                <div className="rounded-full p-2">{icon}</div>
               </div>
               <p className="font-semibold text-gray-700">{label}</p>
             </div>
