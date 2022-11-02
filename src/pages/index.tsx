@@ -9,12 +9,12 @@ export default function HomePage() {
       <Seo />
       <section className="layout flex min-h-screen flex-col items-center justify-center text-left">
         <div className="mb-20 flex w-full max-w-3xl flex-col gap-4">
-          <h1 className="text-left text-7xl tracking-[-0.3rem]">
-            Building beautiful web experiences
+          <h1 className="text-left text-8xl font-bold tracking-[-0.5rem] text-[#1c1c1c] antialiased">
+            Building beautiful web experiences{" "}
           </h1>
-          <p className="text-xl font-normal md:pr-28">
+          <p className="text-xl font-normal text-gray-700 md:pr-28">
             a web developer,{" "}
-            <span className="font-light italic underline decoration-1 underline-offset-4 duration-200 ease-linear hover:text-gray-500">
+            <span className="bg-gray-200 font-light italic underline decoration-1 underline-offset-4 duration-200 ease-linear hover:text-gray-500">
               sometimes designer
             </span>
             . Passionate about user interfaces, interactions, design systems,

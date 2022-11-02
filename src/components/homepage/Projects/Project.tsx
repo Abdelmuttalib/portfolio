@@ -32,7 +32,7 @@ const Project = ({
       )}
       <div className="relative mb-8 flex h-full flex-col justify-between">
         <div className="max-w-xs space-y-1 pr-4">
-          <h3>{projectTitle}</h3>
+          <h3 className="text-[#1c1c1c]">{projectTitle}</h3>
           <p className="text-base italic text-gray-500">
             {projectTechnologies}
           </p>
