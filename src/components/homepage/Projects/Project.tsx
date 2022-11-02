@@ -32,7 +32,7 @@ const Project = ({
       )}
       <div className="relative mb-8 flex h-full flex-col justify-between">
         <div className="max-w-xs space-y-1 pr-4">
-          <h3 className="text-[#1c1c1c]">{projectTitle}</h3>
+          <h2 className="text-[#1c1c1c]">{projectTitle}</h2>
           <p className="text-base italic text-gray-500">
             {projectTechnologies}
           </p>
@@ -40,7 +40,7 @@ const Project = ({
         <div className="relative flex gap-5">
           <PrimaryLink
             href={githubLink}
-            className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 text-primary duration-200 ease-linear hover:border-primary hover:pl-1 md:mb-0 md:text-lg"
+            className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 px-2 text-primary duration-200 ease-linear hover:ml-1 hover:border-primary hover:bg-primary/10 md:mb-0 md:text-lg"
           >
             <GithubIcon className="mr-1.5 h-5 w-5 md:h-6 md:w-6" />
             Source code
@@ -48,7 +48,7 @@ const Project = ({
           {liveDemoLink && (
             <PrimaryLink
               href={liveDemoLink}
-              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 text-primary duration-200 ease-linear hover:border-primary hover:pl-1 md:mb-0 md:text-lg"
+              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 px-2 text-primary duration-200 ease-linear hover:ml-1 hover:border-primary hover:bg-primary/10 md:mb-0 md:text-lg"
             >
               Live demo
               <ArrowRightIcon className="ml-1 w-5 duration-200 ease-linear group-hover:-rotate-45" />
@@ -59,7 +59,7 @@ const Project = ({
 
       <UnstyledLink href={liveDemoLink || githubLink}>
         <NextImage
-          className="relative h-64 w-full transform rounded-md bg-primary/5 ring-2 ring-primary/5 ring-offset-4 transition-all duration-300 ease-linear hover:scale-105 hover:ring-primary md:h-full md:w-full"
+          className="relative h-64 w-full transform rounded-md bg-primary/5 ring-2 ring-primary/5 ring-offset-2 transition-all duration-300 ease-linear hover:scale-105 md:h-full md:w-full"
           src={`${projectImageBasePath}/${imagePath}`}
           alt={`${projectTitle} project image`}
           objectFit="contain"

@@ -6,14 +6,14 @@
     "link": "https://github.com/Abdelmuttalib/PodX"
   },
   {
-    "title": "Full Stack Goals App",
+    "title": "Goals App",
     "technologies": "React, Nextjs, Redux toolkit, Nodejs, Expressjs, MongoDB, Heroku",
     "image": "goals-mern-app.png",
     "link": "https://github.com/Abdelmuttalib/goals-mern-app",
     "liveDemo": "https://goalsfirstmernapp.herokuapp.com/login"
   },
   {
-    "title": "React e-Commerce App",
+    "title": "E-Commerce App",
     "technologies": "React, Material UI, Commerce.js, Stripe",
     "image": "ecommerce-app.png",
     "link": "https://github.com/Abdelmuttalib/react-e_commerce-app"

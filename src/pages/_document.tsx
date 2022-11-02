@@ -20,10 +20,8 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="description"
-            content="Abdelmuttalib Ahmed is a self-taught Front End Developer. Dedicated to driving innovation with the ability to follow industry and technological trends, and facilitating early adoption of innovations."
+            content="Abdelmuttalib Ahmed is a Web Developer. Dedicated to driving innovation with the ability to follow industry and technological trends, and facilitating early adoption of innovations."
           />
-          {/* Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) */}
-          <meta name="keywords" content="[username], [name], skill" />
 
           <link
             rel="preload"
