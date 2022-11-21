@@ -11,7 +11,6 @@ export type ProjectProps = {
   projectTechnologies: string;
   imagePath: string;
   githubLink: string;
-  liveDemoLink?: string;
 };
 
 const projectImageBasePath = "/images/projects";
@@ -21,7 +20,6 @@ const Project = ({
   projectTechnologies,
   imagePath,
   githubLink,
-  liveDemoLink,
 }: ProjectProps) => {
   return (
     <div className="relative grid min-w-[400px] max-w-4xl rounded-md px-10 py-9 md:h-64 md:min-w-[900px] md:grid-cols-2">
