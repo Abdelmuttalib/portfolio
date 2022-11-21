@@ -9,8 +9,7 @@
     "title": "Goals App",
     "technologies": "React, Nextjs, Redux toolkit, Nodejs, Expressjs, MongoDB, Heroku",
     "image": "goals-mern-app.png",
-    "link": "https://github.com/Abdelmuttalib/goals-mern-app",
-    "liveDemo": "https://goalsfirstmernapp.herokuapp.com/login"
+    "link": "https://github.com/Abdelmuttalib/goals-mern-app"
   },
   {
     "title": "E-Commerce App",
