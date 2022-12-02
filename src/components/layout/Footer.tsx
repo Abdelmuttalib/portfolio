@@ -165,9 +165,9 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="mt-20 flex w-full bg-gray-50 py-6 text-center text-base font-medium text-gray-500">
-      <div className="layout flex w-full justify-between">
-        <p className="text-sm font-semibold text-gray-600">
-          © {new Date().getFullYear()} Abdelmuttalib Ahmed
+      <div className="layout flex w-full items-center justify-between px-4 sm:px-6">
+        <p className="text-xs font-semibold text-gray-500">
+          © Abdelmuttalib Ahmed
         </p>
         <div className="bg-gray-.00 flex gap-2 rounded px-1 py-1 pr-2">
           <ul className="flex items-center justify-between space-x-4">
