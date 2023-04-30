@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
 import Head from "next/head";
 
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
