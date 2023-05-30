@@ -6,16 +6,17 @@
     "link": "https://github.com/Abdelmuttalib/PodX"
   },
   {
-    "title": "Goals App",
+    "title": "T3 Todo App",
+    "technologies": "Nextjs, Prisma, tTRPC, Tailwind CSS",
+    "image": "t3-todo-app.png",
+    "link": "https://github.com/Abdelmuttalib/t3-todo-app",
+    "live_link": "https://t3-todo-app-eta-jet.vercel.app/"
+  },
+  {
+    "title": "Goals CRUD App",
     "technologies": "React, Nextjs, Redux toolkit, Nodejs, Expressjs, MongoDB, Heroku",
     "image": "goals-mern-app.png",
     "link": "https://github.com/Abdelmuttalib/goals-mern-app"
-  },
-  {
-    "title": "E-Commerce App",
-    "technologies": "React, Material UI, Commerce.js, Stripe",
-    "image": "ecommerce-app.png",
-    "link": "https://github.com/Abdelmuttalib/react-e_commerce-app"
   },
   {
     "title": "Blog Website",
