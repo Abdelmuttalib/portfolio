@@ -1,5 +1,6 @@
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import React from "react";
 
 import { UnstyledLink } from "@/components/links";
@@ -12,28 +13,33 @@ const contactDetails = [
   {
     link: "mailto:yourmail@domain.com",
     label: "abdelmuttalib1@gmail.com",
-    icon: <EnvelopeIcon className="w-6 text-gray-900" />,
+    icon: <EnvelopeIcon className="w-7 text-gray-900" />,
+    notLink: false,
   },
   {
     link: "tel:+639455102063",
     label: "+639455102063",
-    icon: <PhoneIcon className="w-6 text-gray-900" />,
+    icon: <PhoneIcon className="w-7 text-gray-900" />,
+    notLink: false,
   },
   {
     link: "",
     label: "live:tloob50",
-    icon: <SkypeIcon className="h-6 w-6 text-gray-900" />,
+    icon: <SkypeIcon className="h-7 w-7 text-gray-900" />,
+    image: "/images/skype.png",
     notLink: true,
   },
   {
     link: "https://www.linkedin.com/in/abdelmuttalib-ahmed-81919b160/",
     label: "LinkedIn",
-    icon: <LinkedinIcon className="h-5 w-5 text-gray-900" />,
+    icon: <LinkedinIcon className="h-7 w-7 text-gray-900" />,
+    notLink: false,
   },
   {
     link: "https://github.com/Abdelmuttalib",
     label: "GitHub",
-    icon: <GithubIcon className="h-5 w-5 text-gray-900" />,
+    icon: <GithubIcon className="h-7 w-7 text-gray-900" />,
+    notLink: false,
   },
 ];
 
@@ -43,29 +49,42 @@ const Contact = () => {
       <div className="">
         <h2>Contact</h2>
       </div>
-      <div className="md:grid-cols-auto my-10 flex flex-wrap gap-x-10 gap-y-5">
+      <div className="md:grid-cols-auto my-10 flex flex-col gap-x-10">
         {/* Email Contact Item */}
-        {contactDetails.map(({ link, label, icon, notLink }) =>
+        {contactDetails.map(({ link, label, icon, notLink, image }) =>
           !notLink ? (
             <UnstyledLink
               key={link}
               href={link}
-              className="group flex cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:ring-primary"
+              className="group flex h-fit w-fit cursor-pointer items-center gap-2 rounded-sm border border-gray-700 pr-6 duration-150 ease-linear"
             >
-              <div className="rounded-full p-2">
-                <div className="rounded-full bg-primary/20 p-2">{icon}</div>
+              <div className="">
+                <div className="bg-gray-200/70 p-4">{icon}</div>
               </div>
-              <p className="font-semibold text-gray-700">{label}</p>
+              <p className="font-semibold text-gray-700 group-hover:bg-gray-100">
+                {label}
+              </p>
             </UnstyledLink>
           ) : (
             <div
               key={label}
-              className="group flex cursor-pointer items-center gap-2 rounded-full bg-primary/5 pr-6 duration-150 ease-linear hover:ring-primary"
+              className="group flex w-fit cursor-pointer items-center gap-2 border border-gray-700 pr-6 duration-150 ease-linear"
             >
-              <div className="rounded-full p-2">
-                <div className="rounded-full bg-primary/20 p-2">{icon}</div>
+              <div>
+                <div className="bg-gray-200/70 p-4">
+                  {image && (
+                    <Image
+                      src={image}
+                      alt={`${label} logo`}
+                      width={28}
+                      height={28}
+                    />
+                  )}
+                </div>
               </div>
-              <p className="font-semibold text-gray-700">{label}</p>
+              <p className="font-semibold text-gray-700 group-hover:bg-gray-100">
+                {label}
+              </p>
             </div>
           )
         )}

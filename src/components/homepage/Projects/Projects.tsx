@@ -6,7 +6,7 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <section className="layout grid place-content-center gap-y-20 py-20 md:gap-y-56">
+    <section className="layout grid gap-y-20 py-20 md:gap-y-56">
       {projects.map(
         ({ title, technologies, image, link, live_link }, indx: number) => (
           <>

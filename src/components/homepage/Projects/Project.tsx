@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 import { PrimaryLink, UnstyledLink } from "@/components/links";
-import NextImage from "@/components/NextImage";
 
 import GithubIcon from "~/svg/GithubIcon.svg";
 
@@ -23,45 +23,43 @@ const Project = ({
   liveLink,
 }: ProjectProps) => {
   return (
-    <div className="relative grid min-w-[400px] max-w-4xl rounded-md px-10 py-9 md:h-64 md:min-w-[900px] md:grid-cols-2">
-      {projectTitle === "PódX" && (
-        <span className="absolute right-0 -top-3 z-10 w-fit rounded-full bg-primary/5 px-4 py-1 font-medium text-primary/60">
-          In progress...
-        </span>
-      )}
-      <div className="relative mb-8 flex h-full flex-col justify-between">
+    <div className="relative grid w-full rounded-md md:h-[21rem] md:grid-cols-3">
+      <div className="relative my-4 flex h-full flex-col gap-16">
         <div className="max-w-xs space-y-1 pr-4">
-          <h2 className="text-[#1c1c1c]">{projectTitle}</h2>
+          <h3 className="text-[#1c1c1c]">{projectTitle}</h3>
           <p className="text-base italic text-gray-500">
             {projectTechnologies}
           </p>
         </div>
-        <div className="relative flex gap-5">
-          <PrimaryLink
-            href={githubLink}
-            className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 px-2 text-primary duration-200 ease-linear hover:ml-1 hover:border-primary hover:bg-primary/10 md:mb-0 md:text-lg"
-          >
-            <GithubIcon className="mr-1.5 h-5 w-5 md:h-6 md:w-6" />
-            Source code
-          </PrimaryLink>
+        <div className="relative mr-6 flex flex-col gap-2">
           {liveLink && (
             <PrimaryLink
               href={liveLink}
-              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group mb-8 rounded-md rounded-br-none rounded-bl-none border-b-2 border-transparent py-1 px-2 text-primary duration-200 ease-linear hover:ml-1 hover:border-primary hover:bg-primary/10 md:mb-0 md:text-lg"
+              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group flex  justify-center rounded border border-gray-700 py-2 px-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0"
             >
               Live demo
-              <ArrowRightIcon className="ml-1.5 h-5 w-5 transition-transform duration-300 group-hover:-rotate-45 md:h-6 md:w-6" />
+              <ArrowRightIcon className="ml-1.5 h-5 w-5 -rotate-45" />
             </PrimaryLink>
           )}
+          <PrimaryLink
+            href={githubLink}
+            className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30  flex  justify-center rounded border border-gray-700 py-2 px-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0"
+          >
+            <GithubIcon className="mr-1.5 h-5 w-5" />
+            Source code
+          </PrimaryLink>
         </div>
       </div>
 
-      <UnstyledLink href={liveLink ? liveLink : githubLink}>
-        <NextImage
-          className="relative h-64 w-full transform rounded-md bg-primary/5 ring-2 ring-primary/5 ring-offset-2 transition-all duration-300 ease-linear hover:scale-105 md:h-full md:w-full"
+      <UnstyledLink
+        href={liveLink ? liveLink : githubLink}
+        className="relative col-span-1 h-60 w-full rounded-md border md:col-span-2 md:h-full"
+      >
+        <Image
+          className="relative aspect-square transform rounded-md object-contain duration-300 ease-in-out hover:scale-105 md:object-cover"
           src={`${projectImageBasePath}/${imagePath}`}
           alt={`${projectTitle} project image`}
-          objectFit="contain"
+          layout="fill"
         />
       </UnstyledLink>
     </div>

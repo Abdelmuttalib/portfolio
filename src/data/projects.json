@@ -1,7 +1,14 @@
 [
   {
+    "title": "Opulent",
+    "technologies": "React, Nextjs, Typescript, TailwindCSS, Clerk Authentication, PlanetScale, SQL, Prisma",
+    "image": "opulent.png",
+    "link": "https://github.com/Abdelmuttalib/Opulent/tree/main",
+    "live_link": "https://opulent.vercel.app/"
+  },
+  {
     "title": "Moméntum",
-    "technologies": "React, Nextjs, Typescript, TailwindCSS, Prisma, tRPC, NextAuth, Supabase",
+    "technologies": "React, Nextjs, Typescript, TailwindCSS, Prisma, tRPC, NextAuth, Supabase, PostgreSQL",
     "image": "momentum.png",
     "link": "https://github.com/Abdelmuttalib/momentum",
     "live_link": "https://momentum-gamma.vercel.app/"
@@ -10,7 +17,8 @@
     "title": "PódX",
     "technologies": "React, Nextjs, TailwindCSS, SWR, Typescript, PWA, Workbox",
     "image": "podx-pwa.png",
-    "link": "https://github.com/Abdelmuttalib/PodX"
+    "link": "https://github.com/Abdelmuttalib/PodX",
+    "live_link": "http://podx.vercel.app/"
   },
   {
     "title": "T3 Todo App",
