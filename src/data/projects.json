@@ -21,6 +21,13 @@
     "live_link": "http://podx.vercel.app/"
   },
   {
+    "title": "Memories",
+    "technologies": "React, Nextjs, TailwindCSS, Supabase, Typescript, NextAuth",
+    "image": "memories.png",
+    "link": "https://github.com/Abdelmuttalib/Memories",
+    "live_link": "https://memories-ashen.vercel.app/"
+  },
+  {
     "title": "T3 Todo App",
     "technologies": "Nextjs, Prisma, tTRPC, Tailwind CSS",
     "image": "t3-todo-app.png",

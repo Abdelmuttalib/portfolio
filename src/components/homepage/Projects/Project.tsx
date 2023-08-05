@@ -37,7 +37,7 @@ const Project = ({
           />
         </UnstyledLink>
 
-        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between bg-white/[0.3] py-2 px-4 backdrop-blur-md md:gap-x-2">
+        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between bg-white/[0.7] py-2 px-4 backdrop-blur-md md:gap-x-2">
           <div>
             <h6 className="text-[#1c1c1c] md:text-lg">{projectTitle}</h6>
             <p className="hidden text-sm italic text-gray-700 md:block">
