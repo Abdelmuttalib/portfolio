@@ -1,9 +1,9 @@
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 import { PrimaryLink, UnstyledLink } from "@/components/links";
 
-import GithubIcon from "~/svg/GithubIcon.svg";
+import GithubIcon from "../../../../public/svg/GithubIcon.svg";
 
 export type ProjectProps = {
   projectTitle: string;
@@ -23,45 +23,45 @@ const Project = ({
   liveLink,
 }: ProjectProps) => {
   return (
-    <div className="relative grid w-full rounded-md md:h-[21rem] md:grid-cols-3">
-      <div className="relative my-4 flex h-full flex-col gap-16">
-        <div className="max-w-xs space-y-1 pr-4">
-          <h3 className="text-[#1c1c1c]">{projectTitle}</h3>
-          <p className="text-base italic text-gray-500">
-            {projectTechnologies}
-          </p>
-        </div>
-        <div className="relative mr-6 flex flex-col gap-2">
-          {liveLink && (
+    <div className="relative flex aspect-video h-56 w-full rounded-md md:h-full">
+      <div className="relative w-full rounded-md border">
+        <UnstyledLink
+          href={liveLink ? liveLink : githubLink}
+          className=" h-full w-full rounded-md border"
+        >
+          <Image
+            className="relative aspect-square transform rounded-md object-contain duration-300 ease-in-out hover:scale-105 md:object-cover"
+            src={`${projectImageBasePath}/${imagePath}`}
+            alt={`${projectTitle} project image`}
+            layout="fill"
+          />
+        </UnstyledLink>
+
+        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between bg-white/[0.7] py-2 px-4 backdrop-blur-md md:gap-x-2">
+          <div>
+            <h6 className="text-[#1c1c1c] md:text-lg">{projectTitle}</h6>
+            <p className="hidden text-sm italic text-gray-700 md:block">
+              {projectTechnologies}
+            </p>
+          </div>
+          <div className="relative flex gap-2">
+            {liveLink && (
+              <PrimaryLink
+                href={liveLink}
+                className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group flex w-fit justify-center rounded border border-gray-700 p-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0 md:p-3"
+              >
+                <ArrowRightIcon className="h-5 w-5 -rotate-45" />
+              </PrimaryLink>
+            )}
             <PrimaryLink
-              href={liveLink}
-              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group flex  justify-center rounded border border-gray-700 py-2 px-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0"
+              href={githubLink}
+              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30  flex  w-fit justify-center rounded border border-gray-700 p-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0 md:p-3"
             >
-              Live demo
-              <ArrowRightIcon className="ml-1.5 h-5 w-5 -rotate-45" />
+              <GithubIcon className="h-5 w-5" />
             </PrimaryLink>
-          )}
-          <PrimaryLink
-            href={githubLink}
-            className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30  flex  justify-center rounded border border-gray-700 py-2 px-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0"
-          >
-            <GithubIcon className="mr-1.5 h-5 w-5" />
-            Source code
-          </PrimaryLink>
+          </div>
         </div>
       </div>
-
-      <UnstyledLink
-        href={liveLink ? liveLink : githubLink}
-        className="relative col-span-1 h-60 w-full rounded-md border md:col-span-2 md:h-full"
-      >
-        <Image
-          className="relative aspect-square transform rounded-md object-contain duration-300 ease-in-out hover:scale-105 md:object-cover"
-          src={`${projectImageBasePath}/${imagePath}`}
-          alt={`${projectTitle} project image`}
-          layout="fill"
-        />
-      </UnstyledLink>
     </div>
   );
 };

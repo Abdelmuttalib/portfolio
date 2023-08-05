@@ -56,22 +56,22 @@ const Contact = () => {
             <UnstyledLink
               key={link}
               href={link}
-              className="group flex h-fit w-fit cursor-pointer items-center gap-2 rounded-sm border border-gray-700 pr-6 duration-150 ease-linear"
+              className="group flex h-fit w-fit cursor-pointer items-center gap-2 rounded pr-6 duration-150 ease-linear"
             >
-              <div className="">
-                <div className="bg-gray-200/70 p-4">{icon}</div>
+              <div>
+                <div className="p-4">{icon}</div>
               </div>
-              <p className="font-semibold text-gray-700 group-hover:bg-gray-100">
+              <p className="font-semibold text-gray-700 underline group-hover:bg-gray-100">
                 {label}
               </p>
             </UnstyledLink>
           ) : (
             <div
               key={label}
-              className="group flex w-fit cursor-pointer items-center gap-2 border border-gray-700 pr-6 duration-150 ease-linear"
+              className="group flex w-fit cursor-pointer items-center gap-2 pr-6 pl-1 duration-150 ease-linear"
             >
               <div>
-                <div className="bg-gray-200/70 p-4">
+                <div className="p-2.5">
                   {image && (
                     <Image
                       src={image}
