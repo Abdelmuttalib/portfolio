@@ -69,3 +69,16 @@ function Experience() {
     </section>
   );
 }
+
+// {
+//   "title": "Goals CRUD App",
+//   "technologies": "React, Nextjs, Redux toolkit, Nodejs, Expressjs, MongoDB, Heroku",
+//   "image": "goals-mern-app.png",
+//   "link": "https://github.com/Abdelmuttalib/goals-mern-app"
+// },
+// {
+//   "title": "Blog Website",
+//   "technologies": "React, Material UI, Material Themes",
+//   "image": "blog-app.png",
+//   "link": "https://github.com/Abdelmuttalib/react-blogs-app"
+// }
