@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 import { PrimaryLink, UnstyledLink } from "@/components/links";
@@ -23,14 +23,14 @@ const Project = ({
   liveLink,
 }: ProjectProps) => {
   return (
-    <div className="relative flex aspect-video h-56 w-full rounded-md md:h-full">
+    <div className="relative flex aspect-video w-full rounded-md md:h-full">
       <div className="relative w-full rounded-md border">
         <UnstyledLink
           href={liveLink ? liveLink : githubLink}
           className=" h-full w-full rounded-md border"
         >
           <Image
-            className="relative aspect-square transform rounded-md object-contain duration-300 ease-in-out hover:scale-105 md:object-cover"
+            className="relative transform rounded-md object-fill duration-300 ease-in-out hover:scale-105 md:object-cover"
             src={`${projectImageBasePath}/${imagePath}`}
             alt={`${projectTitle} project image`}
             layout="fill"
@@ -48,14 +48,14 @@ const Project = ({
             {liveLink && (
               <PrimaryLink
                 href={liveLink}
-                className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group flex w-fit justify-center rounded border border-gray-700 p-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0 md:p-3"
+                className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 group flex w-fit justify-center rounded border-2 border-gray-900 bg-gray-900 p-2 text-gray-100 duration-200 ease-linear hover:border-gray-500 hover:text-white md:mb-0 md:p-2.5"
               >
-                <ArrowRightIcon className="h-5 w-5 -rotate-45" />
+                <ArrowRightIcon className="h-5 w-5 -rotate-45 md:h-6 md:w-6" />
               </PrimaryLink>
             )}
             <PrimaryLink
               href={githubLink}
-              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30  flex  w-fit justify-center rounded border border-gray-700 p-2 text-black duration-200 ease-linear hover:border-black hover:bg-gray-100/50 md:mb-0 md:p-3"
+              className="border-primary-50 hover:border-primary-500 hover:text-primary-500 focus:bg-primary-100/30 flex w-fit justify-center rounded border-2 border-gray-900 bg-gray-900 p-2 text-gray-100 duration-200 ease-linear hover:border-gray-500 hover:text-white md:mb-0 md:p-3"
             >
               <GithubIcon className="h-5 w-5" />
             </PrimaryLink>
