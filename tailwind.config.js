@@ -3,6 +3,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -23,7 +24,7 @@ module.exports = {
         //   900: "rgb(var(--tw-color-primary-900) / <alpha-value>)",
         // },
         primary: "#0070f3",
-        dark: "#222222",
+        dark: "#121212",
       },
     },
   },

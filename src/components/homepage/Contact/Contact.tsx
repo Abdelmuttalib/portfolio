@@ -13,32 +13,34 @@ const contactDetails = [
   {
     link: "mailto:yourmail@domain.com",
     label: "abdelmuttalib1@gmail.com",
-    icon: <EnvelopeIcon className="w-7 text-gray-900" />,
+    icon: <EnvelopeIcon className="w-7 text-gray-900 dark:text-[#636363]" />,
     notLink: false,
   },
   {
     link: "tel:+639455102063",
     label: "+639455102063",
-    icon: <PhoneIcon className="w-7 text-gray-900" />,
+    icon: <PhoneIcon className="w-7 text-gray-900 dark:text-[#636363]" />,
     notLink: false,
   },
   {
     link: "",
     label: "live:tloob50",
-    icon: <SkypeIcon className="h-7 w-7 text-gray-900" />,
+    icon: <SkypeIcon className="h-7 w-7 text-gray-900 dark:text-[#636363]" />,
     image: "/images/skype.png",
     notLink: true,
   },
   {
     link: "https://www.linkedin.com/in/abdelmuttalib-ahmed-81919b160/",
     label: "LinkedIn",
-    icon: <LinkedinIcon className="h-7 w-7 text-gray-900" />,
+    icon: (
+      <LinkedinIcon className="h-7 w-7 text-gray-900 dark:text-[#636363]" />
+    ),
     notLink: false,
   },
   {
     link: "https://github.com/Abdelmuttalib",
     label: "GitHub",
-    icon: <GithubIcon className="h-7 w-7 text-gray-900" />,
+    icon: <GithubIcon className="h-7 w-7 text-gray-900 dark:text-[#636363]" />,
     notLink: false,
   },
 ];
@@ -61,7 +63,7 @@ const Contact = () => {
               <div>
                 <div className="p-4">{icon}</div>
               </div>
-              <p className="font-semibold text-gray-700 underline group-hover:bg-gray-100">
+              <p className="font-semibold text-gray-700 underline group-hover:bg-gray-100 dark:text-[#636363] dark:group-hover:bg-dark/50">
                 {label}
               </p>
             </UnstyledLink>
@@ -82,7 +84,7 @@ const Contact = () => {
                   )}
                 </div>
               </div>
-              <p className="font-semibold text-gray-700 group-hover:bg-gray-100">
+              <p className="font-semibold text-gray-700 group-hover:bg-gray-100 dark:text-[#636363] dark:group-hover:bg-dark/50">
                 {label}
               </p>
             </div>

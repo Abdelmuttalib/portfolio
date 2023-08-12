@@ -1,4 +1,5 @@
 import { UnstyledLink } from "@/components/links";
+import ThemeSwitcher from "@/components/theme-switcher";
 
 const LinkedInIcon = ({ className }: { className: string }) => {
   return (
@@ -43,45 +44,45 @@ const TwitterIcon = ({ className }: { className: string }) => {
   );
 };
 
-const FigmaIcon = () => {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g clip-path="url(#clip0_17_203)">
-        <path
-          d="M16.0001 48C20.4162 48 24.0002 44.4159 24.0002 39.9999V31.9999H16.0001C11.5841 31.9999 8 35.5839 8 39.9999C8 44.4159 11.5841 48 16.0001 48Z"
-          fill="#0ACF83"
-        />
-        <path
-          d="M8 23.9999C8 19.5839 11.5841 15.9999 16.0001 15.9999H24.0002V31.9998H16.0001C11.5841 32 8 28.4159 8 23.9999Z"
-          fill="#A259FF"
-        />
-        <path
-          d="M8 8.00006C8 3.58406 11.5841 0 16.0001 0H24.0002V15.9999H16.0001C11.5841 15.9999 8 12.4161 8 8.00006Z"
-          fill="#F24E1E"
-        />
-        <path
-          d="M23.9998 0H31.9999C36.4159 0 40 3.58406 40 8.00006C40 12.4161 36.4159 15.9999 31.9999 15.9999H23.9998V0Z"
-          fill="#FF7262"
-        />
-        <path
-          d="M40 23.9999C40 28.4159 36.4159 32 31.9999 32C27.5838 32 23.9998 28.4159 23.9998 23.9999C23.9998 19.5839 27.5838 15.9999 31.9999 15.9999C36.4159 15.9999 40 19.5839 40 23.9999Z"
-          fill="#1ABCFE"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_17_203">
-          <rect width="48" height="48" fill="white" />
-        </clipPath>
-      </defs>
-    </svg>
-  );
-};
+// const FigmaIcon = () => {
+//   return (
+//     <svg
+//       width="20"
+//       height="20"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <g clip-path="url(#clip0_17_203)">
+//         <path
+//           d="M16.0001 48C20.4162 48 24.0002 44.4159 24.0002 39.9999V31.9999H16.0001C11.5841 31.9999 8 35.5839 8 39.9999C8 44.4159 11.5841 48 16.0001 48Z"
+//           fill="#0ACF83"
+//         />
+//         <path
+//           d="M8 23.9999C8 19.5839 11.5841 15.9999 16.0001 15.9999H24.0002V31.9998H16.0001C11.5841 32 8 28.4159 8 23.9999Z"
+//           fill="#A259FF"
+//         />
+//         <path
+//           d="M8 8.00006C8 3.58406 11.5841 0 16.0001 0H24.0002V15.9999H16.0001C11.5841 15.9999 8 12.4161 8 8.00006Z"
+//           fill="#F24E1E"
+//         />
+//         <path
+//           d="M23.9998 0H31.9999C36.4159 0 40 3.58406 40 8.00006C40 12.4161 36.4159 15.9999 31.9999 15.9999H23.9998V0Z"
+//           fill="#FF7262"
+//         />
+//         <path
+//           d="M40 23.9999C40 28.4159 36.4159 32 31.9999 32C27.5838 32 23.9998 28.4159 23.9998 23.9999C23.9998 19.5839 27.5838 15.9999 31.9999 15.9999C36.4159 15.9999 40 19.5839 40 23.9999Z"
+//           fill="#1ABCFE"
+//         />
+//       </g>
+//       <defs>
+//         <clipPath id="clip0_17_203">
+//           <rect width="48" height="48" fill="white" />
+//         </clipPath>
+//       </defs>
+//     </svg>
+//   );
+// };
 const GithubIcon = ({ className }: { className: string }) => {
   return (
     <svg
@@ -141,36 +142,36 @@ const socialLinks = [
   {
     link: "https://www.linkedin.com/in/abdelmuttalib-ahmed-81919b160/",
     icon: (
-      <LinkedInIcon className="text-gray-700 duration-200 ease-linear hover:text-[#0A66C2]" />
+      <LinkedInIcon className="text-gray-700 duration-200 ease-linear hover:text-[#0A66C2] dark:text-[#636363]" />
     ),
   },
   {
     link: "https://twitter.com/Abdelmuttalib_",
     icon: (
-      <TwitterIcon className="text-gray-700 duration-200 ease-linear hover:text-[#1DA1F2]" />
+      <TwitterIcon className="text-gray-700 duration-200 ease-linear hover:text-[#1DA1F2] dark:text-[#636363]" />
     ),
   },
   {
     link: "https://github.com/Abdelmuttalib",
     icon: (
-      <GithubIcon className="text-gray-700 duration-200 ease-linear hover:text-[#191717]" />
+      <GithubIcon className="text-gray-700 duration-200 ease-linear hover:text-[#191717] dark:text-[#636363]" />
     ),
   },
-  {
-    link: "https://www.figma.com/files/user/1015175145412235486?fuid=1015175145412235486",
-    icon: <FigmaIcon />,
-  },
+  // {
+  //   link: "https://www.figma.com/files/user/1015175145412235486?fuid=1015175145412235486",
+  //   icon: <FigmaIcon />,
+  // },
 ];
 
 const Footer = () => {
   return (
-    <footer className="mt-20 flex w-full border-t py-6 text-center text-base text-gray-500">
+    <footer className="mt-20 flex w-full border-t py-6 text-center text-base text-gray-500 dark:border-t-dark dark:text-[#636363]">
       <div className="layout flex w-full items-center justify-between">
-        <p className="text-sm text-gray-500">
+        <p className="text-sm">
           © {new Date().getFullYear()} Abdelmuttalib Ahmed
         </p>
-        <div className="bg-gray-.00 flex gap-2 rounded px-1 py-1 pr-2">
-          <ul className="flex items-center justify-between space-x-4">
+        <div className="flex gap-2 divide-x-2 rounded px-1 py-1 pr-2 dark:divide-[#202020]">
+          <ul className="flex items-center justify-between space-x-4 pr-3">
             {socialLinks.map(({ link, icon }) => (
               <li key={`${link}`}>
                 <UnstyledLink href={link} openNewTab>
@@ -179,6 +180,9 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+          <div className="pl-4">
+            <ThemeSwitcher />
+          </div>
         </div>
       </div>
     </footer>
