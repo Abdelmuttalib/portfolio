@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
 import Head from "next/head";
+import { ThemeProvider } from "next-themes";
 
 import "@/styles/globals.css";
 
@@ -12,7 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class" defaultTheme="system">
+        <Component {...pageProps} />
+      </ThemeProvider>
       <Analytics />
     </>
   );
